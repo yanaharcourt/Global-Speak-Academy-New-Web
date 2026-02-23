@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Speak Academy – Master Languages. Unlock the World.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-logo" href="#">
+      <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+    </a>
+
+    <ul class="nav-links">
+
+      <li class="has-dropdown">
+        <a href="#">Programs <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="#programs">Adult Lessons</a></li>
+          <li><a href="#programs">Kids Lessons</a></li>
+          <li><a href="#programs">Group Classes</a></li>
+          <li><a href="#programs">Self Guided Lessons</a></li>
+          <li><a href="#programs">Corporate Training</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dropdown">
+        <a href="#">Pricing <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="#">Subscription Plans</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#">English Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+      <li class="has-dropdown">
+        <a href="#">More <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="#">Self Guided Lessons</a></li>
+          <li><a href="#">Corporate Training</a></li>
+          <li><a href="#">Career at Global Speak Academy</a></li>
+          <li><a href="#">English Resourses</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <a class="btn-apply" href="#contact">Apply Now</a>
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 40) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      });
+    </script>
+  
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="mob-header">
+      <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:40px; width:auto; display:block;">
+      <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+
+    <a href="#programs" class="mob-link">Programs</a>
+    <a href="#" class="mob-link">Pricing</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#testimonials" class="mob-link">Testimonials</a>
+    <a href="#" class="mob-link">English Resources</a>
+    <a href="#contact" class="mob-link">Contact</a>
+    <a href="#contact" class="mob-apply">Apply Now</a>
+
+  </div>
+
+
+  <!-- Hero -->
+  <div class="hero">
+    <span class="hero-tag">Premium Language Education</span>
+    <h1>Master Languages.<br>Unlock the World.</h1>
+    <p>Join thousands of professionals, students, and global citizens who've transformed their communication skills
+      through our proven methodology.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-hero-primary">Start Your Journey</a>
+      <a href="#programs" class="btn-hero-outline">Explore Programs</a>
+    </div>
+    <div class="hero-image-wrap">
+      <img src="assets/img/01.png" alt="Student learning English"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="hero-img-ph" style="display:none">Replace with assets/img/01.png</div>
+    </div>
+  </div>
+
+
+  <!-- Programs -->
+  <section class="programs" id="programs">
+    <span class="section-tag">Our Programs</span>
+    <h2 class="section-h2">Programs Designed for Your Goals</h2>
+    <p class="section-lead">From beginner to advanced, find the perfect path for your language journey.</p>
+    <div class="programs-grid">
+
+      <div class="prog-card">
+        <img src="assets/img/02.png" alt="Adult Lessons"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-card-ph" style="background:linear-gradient(135deg,#f0e6c8,#d4b87a);display:none">📚</div>
+        <div class="prog-card-body">
+          <h3>Adult Lessons</h3>
+          <p>Build a strong foundation in reading, writing, speaking, and listening with private 1:1 lessons tailored to
+            Reading, Grammar, Vocabulary, and Speaking skills.</p>
+          <a href="#" class="learn-more">Learn More &rarr;</a>
+        </div>
+      </div>
+
+      <div class="prog-card">
+        <img src="assets/img/03.png" alt="Kids English Ages 4–12"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-card-ph" style="background:linear-gradient(135deg,#c8e6d4,#5a9b75);display:none">👦</div>
+        <div class="prog-card-body">
+          <h3>Kids English Ages 4–12</h3>
+          <p>Build a strong foundation in English for young learners ages 4–12 through engaging private 1:1 lessons
+            focused on Reading, Phonics, Speaking, and Grammar.</p>
+          <a href="#" class="learn-more">Learn More &rarr;</a>
+        </div>
+      </div>
+
+      <div class="prog-card">
+        <img src="assets/img/04.png" alt="Group Classes"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-card-ph" style="background:linear-gradient(135deg,#c8d4e6,#5a75a0);display:none">👥</div>
+        <div class="prog-card-body">
+          <h3>Group Classes (Adults)</h3>
+          <p>Strengthen your English skills in adult group classes designed to develop Reading, Grammar, Vocabulary, and
+            Speaking with confidence.</p>
+          <a href="#" class="learn-more">Learn More &rarr;</a>
+        </div>
+      </div>
+
+      <div class="prog-card">
+        <img src="assets/img/05.png" alt="Self-Guided Learning"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-card-ph" style="background:linear-gradient(135deg,#e6d4c8,#a07050);display:none">💻</div>
+        <div class="prog-card-body">
+          <h3>Self-Guided Learning</h3>
+          <p>Study at your own pace with structured video lessons, complemented by worksheets, interactive quizzes, and
+            monthly progress assessments.</p>
+          <a href="#" class="learn-more">Learn More &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Difference -->
+  <section class="difference">
+    <span class="section-tag">Why Choose Us</span>
+    <h2 class="section-h2">The Global Language Academy Difference</h2>
+    <div class="diff-grid">
+
+      <div class="diff-item">
+        <div class="diff-icon-wrap">
+          <img src="./assets/img/06.svg" alt="Expert Instructors">
+        </div>
+        <div class="diff-text">
+          <h4>Expert Instructors</h4>
+          <p>Learn from certified teachers with years of experience and native-level fluency.</p>
+        </div>
+      </div>
+
+      <div class="diff-item">
+        <div class="diff-icon-wrap">
+          <img src="./assets/img/07.svg" alt="Flexible Scheduling">
+        </div>
+        <div class="diff-text">
+          <h4>Flexible Scheduling</h4>
+          <p>Study at your own pace with live classes available across all time zones.</p>
+        </div>
+      </div>
+
+      <div class="diff-item">
+        <div class="diff-icon-wrap">
+          <img src="./assets/img/08.svg" alt="Personalized Learning">
+        </div>
+        <div class="diff-text">
+          <h4>Personalized Learning</h4>
+          <p>Customized lesson plans based on your goals, level, and learning style.</p>
+        </div>
+      </div>
+
+      <div class="diff-item">
+        <div class="diff-icon-wrap">
+          <img src="./assets/img/09.svg" alt="Global Community">
+        </div>
+        <div class="diff-text">
+          <h4>Global Community</h4>
+          <p>Connect with learners from over 80 countries and build international friendships.</p>
+        </div>
+      </div>
+
+      <div class="diff-item">
+        <div class="diff-icon-wrap">
+          <img src="./assets/img/010.svg" alt="Proven Methodology">
+        </div>
+        <div class="diff-text">
+          <h4>Proven Methodology</h4>
+          <p>Research-backed curriculum designed for real-world communication success.</p>
+        </div>
+      </div>
+
+      <div class="diff-item">
+        <div class="diff-icon-wrap">
+          <img src="./assets/img/011.svg" alt="Progress Tracking">
+        </div>
+        <div class="diff-text">
+          <h4>Progress Tracking</h4>
+          <p>Regular assessments and detailed feedback to keep you on track.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <span class="section-tag">Testimonials</span>
+    <h2 class="section-h2">What Our Students Say</h2>
+    <p class="section-lead">Don't just take our word for it – hear what our students have to say about their language
+      learning experience at Global Speak Academy. Our students come from all walks of life and have achieved impressive
+      results with our immersive curriculum and supportive teachers.</p>
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <span class="quote-icon">&#10078;</span>
+        <p>I started my lesson with Brandi about a month ago. She's very organized and patient, she explains every
+          question I have in detail, and provides feedback to improve my skills. I highly recommend her.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <span class="testi-name">Sandra Jurado</span>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <span class="quote-icon">&#10078;</span>
+        <p>My son has been learning English with Miss Brandi since he was 6, and at age 10, he has reached the B2 level
+          thanks to her. I truly recommend her teaching method as it is very structured and effective.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <span class="testi-name">Sandra C.</span>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <span class="quote-icon">&#10078;</span>
+        <p>My son has been learning English with Miss Brandi since he was 6, and at age 10, he has reached the B2 level
+          thanks to her. I truly recommend her teaching method as it is very structured and effective.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <span class="testi-name">Sandra C.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Legacy / About -->
+  <section class="legacy" id="about">
+    <div class="legacy-img">
+      <img src="assets/img/012.png" alt="Brandi Stephens, Founder"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="legacy-img-ph" style="display:none">🏫</div>
+    </div>
+    <div class="legacy-content">
+      <span class="section-tag">About Us</span>
+      <h2 class="section-h2">A Legacy of Language Excellence</h2>
+      <p>Global Speak Academy helps adults, children, and professionals become confident English speakers through
+        personalized lessons and practical communication skills.</p>
+      <p>Founded by Brandi Stephens, the academy began as private tutoring and has grown into a global online school
+        serving students across the U.S., Europe, and the Middle East.</p>
+      <p>We focus on:</p>
+      <ul class="legacy-list">
+        <li>Communicative teaching — speaking practice every lesson</li>
+        <li>Personalized learning plans — tailored to each student's goals</li>
+        <li>Structured curriculum — reading, writing, grammar, listening, and fluency</li>
+        <li>Real-world English — workplace communication, travel English, academic support</li>
+        <li>Monthly assessments — measurable progress and certificates</li>
+      </ul>
+      <p style="margin-top:20px;font-weight:600;color:var(--dark)">Our goal is simple: Confidence + Clarity in every
+        lesson.</p>
+    </div>
+  </section>
+
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat-item">
+      <span class="stat-num">50,000+</span>
+      <span class="stat-lbl">Graduates</span>
+      <span class="stat-sub">Students who've completed our programs</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">80%</span>
+      <span class="stat-lbl">Countries</span>
+      <span class="stat-sub">Global reach across continents</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">40+</span>
+      <span class="stat-lbl">Instructors</span>
+      <span class="stat-sub">Certified language experts</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">95%</span>
+      <span class="stat-lbl">Satisfaction</span>
+      <span class="stat-sub">Student recommendation rate</span>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq-wrap">
+      <span class="section-tag">Frequently Asked Questions</span>
+      <h2 class="section-h2">FAQ</h2>
+      <p class="faq-contact">Please reach us at <a
+          href="mailto:BStephens@globalSpeakacademy.org">BStephens@globalSpeakacademy.org</a> if you cannot find an
+        answer to your question.</p>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            How do trial lessons work? <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-ans">
+            Your trial lesson is a 90-minute full pre-evaluation that includes:
+            <ul style="margin: 10px 0 0 18px; line-height: 2;">
+              <li>Speaking assessment</li>
+              <li>Grammar and vocabulary check</li>
+              <li>Mini-lesson with corrections</li>
+              <li>Level recommendation (A1–C2)</li>
+              <li>Personalized learning plan</li>
+              <li>Parent feedback for children</li>
+              <li>Adult feedback</li>
+            </ul>
+            <p style="margin-top: 12px;">The trial is <strong>$15</strong> and helps us place you into the best program
+              for your goals.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            Are classes recorded? <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-ans">
+            Yes. All classes are recorded and uploaded to your private Google Drive folder so that you can review your
+            lessons anytime.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            Do you teach kids? <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-ans">
+            Yes. We teach children ages 5–12 through fun and supportive 1:1 lessons focused on:
+            <ul style="margin: 10px 0 0 18px; line-height: 2;">
+              <li>Reading</li>
+              <li>Phonics</li>
+              <li>Speaking</li>
+              <li>Vocabulary</li>
+              <li>Grammar</li>
+            </ul>
+            <p style="margin-top: 12px;">Kids also receive monthly assessments and certificates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            Do you offer certificates? <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-ans">
+            Yes. Students receive:
+            <ul style="margin: 10px 0 0 18px; line-height: 2;">
+              <li>Monthly certificates</li>
+              <li>Progress reports</li>
+              <li>Completion certificates for each level</li>
+            </ul>
+            <p style="margin-top: 12px;">Certificates are included at no extra cost.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            What platforms do you use? <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-ans">
+            <ul style="margin: 0 0 0 18px; line-height: 2;">
+              <li>Zoom for live classes</li>
+              <li>Google Drive for recordings, notes, homework, and resources</li>
+            </ul>
+            <p style="margin-top: 12px;">Everything is organized and easy to access.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog -->
+  <section class="blog" id="blog">
+    <span class="section-tag">Blog</span>
+    <h2 class="section-h2">Programs Designed for Your Goals</h2>
+    <p class="section-lead">From beginner to advanced, find the perfect path for your language journey.</p>
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <img src="assets/img/013.png" alt="Blog 1"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="blog-card-ph" style="background:linear-gradient(135deg,#1a3a5c,#2c5f8a);display:none">📰</div>
+        <div class="blog-card-body">
+          <span class="blog-date">February 17, 2026</span>
+          <h4>Discover the World of Mastering English with Global Speak Academy</h4>
+          <p>Step into a new era of English learning that places practical communication and cultural immersion at its
+            heart. This guide unveils a forward-thinking approach to mastering English...</p>
+          <a href="#" class="read-art">Read Article</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="assets/img/014.png" alt="Blog 2"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="blog-card-ph" style="background:linear-gradient(135deg,#c9a227,#8b6914);display:none">✏️</div>
+        <div class="blog-card-body">
+          <span class="blog-date">February 3, 2026</span>
+          <h4>Benefits of Personalized English Lessons</h4>
+          <p>Personalized English lessons transform the learning journey by focusing on your unique strengths and
+            challenges. Instead of following a one-size-fits-all curriculum, customized classes...</p>
+          <a href="#" class="read-art">Read Article</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="assets/img/015.png" alt="Blog 3"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="blog-card-ph"
+          style="background:#f0ebe0;display:none;flex-direction:column;font-family:serif;font-size:26px;font-weight:700;color:#1a1a1a;text-align:center;letter-spacing:2px">
+          LEARN<br>ENGLISH</div>
+        <div class="blog-card-body">
+          <span class="blog-date">February 2, 2026</span>
+          <h4>Confident English Speaking with Global Speak Academy</h4>
+          <p>Unlock a new level of communication as you explore ways to confidently express yourself in English. This
+            guide provides practical insights and actionable tips essential for anyone...</p>
+          <a href="#" class="read-art">Read Article</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <span class="section-tag">Get Started</span>
+    <h2>Begin Your Language Journey Today</h2>
+    <p>Schedule a free consultation and discover the perfect program for your goals.</p>
+    <div class="cta-btns">
+      <a href="/cdn-cgi/l/email-protection#6a28391e0f1a020f04192a0d0605080b06391a0f0b010b090b0e0f07134405180d"
+        class="btn-cta-gold">Book Free Consultation</a>
+      <a href="#programs" class="btn-cta-outline">Explore Programs</a>
+    </div>
+    <div class="cta-email">
+      <svg viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <polyline points="2,4 12,13 22,4" />
+      </svg>
+      <a href="mailto:BStephens@globalSpeakacademy.org">BStephens@globalSpeakacademy.org
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+
+      <!-- LOGO -->
+      <div class="footer-logo">
+        <a href="#">
+          <img src="./assets/img/logo-gold.png" alt="Global Speak Academy"
+            style="height:56px;width:auto;display:block;">
+        </a>
+      </div>
+
+      <!-- NAV -->
+      <ul class="footer-nav">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- SOCIAL ICONS -->
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="LinkedIn">
+          <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <img src="./assets/img/Instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Facebook">
+          <img src="./assets/img/Facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Global Speak Academy &ndash; All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made by <a href="http://yanaharcourt.dev" class="designer-link">Yana Harcourt</a></p>
+    </div>
+  </footer>
+
+  <!-- Navigation -->
+  <script>
+    function toggleFaq(btn) {
+      const ans = btn.nextElementSibling;
+      const isOpen = ans.classList.contains('open');
+      document.querySelectorAll('.faq-ans').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-btn').forEach(b => b.classList.remove('open'));
+      if (!isOpen) { ans.classList.add('open'); btn.classList.add('open'); }
+    }
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.prog-card, .diff-item, .testi-card, .blog-card, .stat-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+      io.observe(el);
+    });
+  </script>
+
+  <!-- STATS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const statItems = document.querySelectorAll('.stat-item');
+      let hasAnimated = false;
+
+      // Функция для анимации чисел
+      function animateCounter(element, target, suffix = '') {
+        const duration = 2000; // 2 секунды
+        const steps = 60;
+        const increment = target / steps;
+        let current = 0;
+        let step = 0;
+
+        const timer = setInterval(() => {
+          step++;
+          current += increment;
+
+          if (step >= steps) {
+            element.textContent = target.toLocaleString() + suffix;
+            clearInterval(timer);
+          } else {
+            element.textContent = Math.floor(current).toLocaleString() + suffix;
+          }
+        }, duration / steps);
+      }
+
+      // Intersection Observer для запуска при скролле
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !hasAnimated) {
+            hasAnimated = true;
+
+            statItems.forEach((item, index) => {
+              const numberElement = item.querySelector('.stat-num');
+              const text = numberElement.textContent.trim();
+
+              // Определяем число и суффикс
+              let target, suffix;
+
+              if (text.includes('%')) {
+                target = parseInt(text.replace('%', ''));
+                suffix = '%';
+              } else if (text.includes('+')) {
+                target = parseInt(text.replace(/\D/g, ''));
+                suffix = '+';
+              } else if (text.includes(',')) {
+                target = parseInt(text.replace(/,/g, ''));
+                suffix = '+';
+              } else {
+                target = parseInt(text.replace(/\D/g, ''));
+                suffix = '';
+              }
+
+              // Запускаем анимацию с задержкой
+              setTimeout(() => {
+                numberElement.textContent = '0' + suffix;
+                animateCounter(numberElement, target, suffix);
+              }, index * 200);
+
+              // Fade in анимация для всего stat-item
+              item.style.opacity = '0';
+              item.style.transform = 'translateY(30px)';
+              item.style.transition = 'all 0.6s ease-out';
+
+              setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+              }, index * 200);
+            });
+          }
+        });
+      }, { threshold: 0.3 }); // Запускается когда 30% секции видно
+
+      // Наблюдаем за секцией stats
+      const statsSection = document.querySelector('.stats');
+      if (statsSection) {
+        observer.observe(statsSection);
+      }
+    });
+  </script>
+
+  <script>
+    const burger = document.getElementById('burger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobClose = document.getElementById('mobClose');
+
+      function openMenu() {
+        burger.classList.add('open');
+        mobileMenu.classList.add('open');
+        document.body.classList.add('menu-open');
+      }
+
+      function closeMenu() {
+        burger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      }
+
+      burger.addEventListener('click', () => {
+        burger.classList.contains('open') ? closeMenu() : openMenu();
+      });
+
+      mobClose.addEventListener('click', closeMenu);
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeMenu();
+      });
+  </script>
+
+</body>
+
+</html>
