@@ -1157,10 +1157,12 @@ footer {
 .burger.open span:nth-child(3) {
   transform: translateY(-6.5px) rotate(-45deg);
 }
+
 .burger:focus,
 .mob-close:focus {
   outline: none;
 }
+
 .mobile-menu {
   display: none;
   position: fixed;
@@ -1211,6 +1213,19 @@ footer {
 
 .mob-close:hover {
   background: var(--bg-soft);
+}
+
+.mob-close {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+}
+
+.mob-close,
+.burger,
+.mob-dropdown-btn {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .mobile-menu a.mob-link {
