@@ -75,21 +75,49 @@
     </button>
 
   </nav>
+ 
+  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-
     <div class="mob-header">
       <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:40px; width:auto; display:block;">
       <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
     </div>
 
-    <a href="#programs" class="mob-link">Programs</a>
-    <a href="#" class="mob-link">Pricing</a>
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Programs <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="#programs">Adult Lessons</a>
+        <a href="#programs">Kids Lessons</a>
+        <a href="#programs">Group Classes</a>
+        <a href="#programs">Self Guided Lessons</a>
+        <a href="#programs">Corporate Training</a>
+      </div>
+    </div>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Pricing <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="#">Subscription Plans</a>
+      </div>
+    </div>
+
     <a href="#about" class="mob-link">About</a>
     <a href="#testimonials" class="mob-link">Testimonials</a>
     <a href="#" class="mob-link">English Resources</a>
     <a href="#contact" class="mob-link">Contact</a>
-    <a href="#contact" class="mob-apply">Apply Now</a>
 
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">More <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="#">Self Guided Lessons</a>
+        <a href="#">Corporate Training</a>
+        <a href="#">Career at Global Speak Academy</a>
+        <a href="#">English Resources</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <a href="#contact" class="mob-apply">Apply Now</a>
   </div>
 
 
@@ -680,12 +708,26 @@
 
       mobClose.addEventListener('click', closeMenu);
 
-      mobileMenu.querySelectorAll('a').forEach(link => {
+      mobileMenu.querySelectorAll('a.mob-link, a.mob-apply').forEach(link => {
         link.addEventListener('click', closeMenu);
       });
 
       document.addEventListener('keydown', e => {
         if (e.key === 'Escape') closeMenu();
+      });
+
+      document.querySelectorAll('.mob-dropdown-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const dropdown = btn.nextElementSibling;
+          const isOpen = dropdown.classList.contains('open');
+          document.querySelectorAll('.mob-dropdown').forEach(d => d.classList.remove('open'));
+          document.querySelectorAll('.mob-dropdown-btn').forEach(b => b.classList.remove('open'));
+          if (!isOpen) {
+            dropdown.classList.add('open');
+            btn.classList.add('open');
+          }
+        });
       });
   </script>
 
