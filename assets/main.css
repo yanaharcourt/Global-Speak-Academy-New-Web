@@ -712,7 +712,7 @@ section {
 --------------------------------------------------------------*/
 .difference {
     background: #fff;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
 .diff-grid {
@@ -890,7 +890,7 @@ section {
 
 .testi-card p {
     font-size: 16px;
-    color: #1A1A1A;
+    color: var(--text-dark);
     line-height: 1.7;
     margin-bottom: 24px;
 }
@@ -1752,9 +1752,9 @@ section {
 # CTA
 --------------------------------------------------------------*/
 .cta {
-    background: #1a1a1a;
+    background: var(--text-dark);
     text-align: center;
-    padding: 100px 64px;
+    padding: 120px 120px;
 }
 
 .cta .section-tag {
@@ -2125,7 +2125,7 @@ footer {
   }
   .footer-bottom p,
   .footer-links a {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 /* RESPONSIVE */
