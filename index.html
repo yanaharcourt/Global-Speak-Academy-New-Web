@@ -326,129 +326,129 @@
   </section> -->
 
   <section class="testimonials" id="testimonials">
-  <span class="section-tag">Testimonials</span>
-  <h2 class="section-h2">What Our Students Say</h2>
-  <p class="section-lead">Don't just take our word for it – hear what our students have to say about their language learning experience at Global Speak Academy. Our students come from all walks of life and have achieved impressive results with our immersive curriculum and supportive teachers.</p>
+    <span class="section-tag">Testimonials</span>
+    <h2 class="section-h2">What Our Students Say</h2>
+    <p class="section-lead">Don't just take our word for it – hear what our students have to say about their language learning experience at Global Speak Academy. Our students come from all walks of life and have achieved impressive results with our immersive curriculum and supportive teachers.</p>
 
-  <div class="testi-carousel-wrapper">
-    <div class="testi-track" id="testiTrack"></div>
-    <div class="testi-controls">
-      <button class="testi-btn" id="testiPrev" aria-label="Previous">&#8592;</button>
-      <div class="testi-dots" id="testiDots"></div>
-      <button class="testi-btn" id="testiNext" aria-label="Next">&#8594;</button>
+    <div class="testi-carousel-wrapper">
+      <div class="testi-track" id="testiTrack"></div>
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiPrev" aria-label="Previous">&#8592;</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiNext" aria-label="Next">&#8594;</button>
+      </div>
     </div>
-  </div>
 
-  <script>
-    (function () {
-      const REVIEWS = [
-        { init: 'S', name: 'Sandra Jurado', text: 'I started my lesson with Brandi about a month ago. She\'s very organized and patient, she explains every question I have in detail, and provides feedback to improve my skills. I highly recommend her.' },
-        { init: 'S', name: 'Sandra C.',     text: 'My son has been learning English with Miss Brandi since he was 6, and at age 10, he has reached the B2 level thanks to her. I truly recommend her teaching method as it is very structured and effective.' },
-        { init: 'M', name: 'Maria L.',      text: 'Brandi is an incredible teacher — patient, creative, and always prepared. After just a few months, I feel so much more confident speaking English in my daily life and at work.' },
-        { init: 'J', name: 'James R.',      text: 'The structured approach and personalized lessons made all the difference. I went from A2 to B1 in just five months. I couldn\'t have done it without Global Speak Academy.' },
-        { init: 'A', name: 'Anna K.',       text: 'I tried many online platforms before, but nothing compared to learning with a real teacher who truly cares about your progress. Highly recommend to anyone serious about their English.' },
-      ];
+    <script>
+      (function () {
+        const REVIEWS = [
+          { init: 'S', name: 'Sandra Jurado', text: 'I started my lesson with Brandi about a month ago. She\'s very organized and patient, she explains every question I have in detail, and provides feedback to improve my skills. I highly recommend her.' },
+          { init: 'S', name: 'Sandra C.',     text: 'My son has been learning English with Miss Brandi since he was 6, and at age 10, he has reached the B2 level thanks to her. I truly recommend her teaching method as it is very structured and effective.' },
+          { init: 'M', name: 'Maria L.',      text: 'Brandi is an incredible teacher — patient, creative, and always prepared. After just a few months, I feel so much more confident speaking English in my daily life and at work.' },
+          { init: 'J', name: 'James R.',      text: 'The structured approach and personalized lessons made all the difference. I went from A2 to B1 in just five months. I couldn\'t have done it without Global Speak Academy.' },
+          { init: 'A', name: 'Anna K.',       text: 'I tried many online platforms before, but nothing compared to learning with a real teacher who truly cares about your progress. Highly recommend to anyone serious about their English.' },
+        ];
 
-      const track   = document.getElementById('testiTrack');
-      const dots    = document.getElementById('testiDots');
-      const prevBtn = document.getElementById('testiPrev');
-      const nextBtn = document.getElementById('testiNext');
-      const wrapper = document.querySelector('.testi-carousel-wrapper');
+        const track   = document.getElementById('testiTrack');
+        const dots    = document.getElementById('testiDots');
+        const prevBtn = document.getElementById('testiPrev');
+        const nextBtn = document.getElementById('testiNext');
+        const wrapper = document.querySelector('.testi-carousel-wrapper');
 
-      let current   = 0;
-      let animating = false;
+        let current   = 0;
+        let animating = false;
 
-      // How many cards fit per page
-      function perPage() {
-        if (window.innerWidth >= 1024) return 3;
-        if (window.innerWidth >= 640)  return 2;
-        return 1;
-      }
-
-      // Split reviews into pages
-      function getPages() {
-        const pp = perPage();
-        const pages = [];
-        for (let i = 0; i < REVIEWS.length; i += pp) {
-          pages.push(REVIEWS.slice(i, i + pp));
+        // How many cards fit per page
+        function perPage() {
+          if (window.innerWidth >= 1024) return 3;
+          if (window.innerWidth >= 640)  return 2;
+          return 1;
         }
-        return pages;
-      }
 
-      // Build one slide element; cards use flex:1 to always fill the row
-      function makeSlide(reviews) {
-        const slide = document.createElement('div');
-        slide.className = 'testi-slide';
-        reviews.forEach(r => {
-          const card = document.createElement('div');
-          card.className = 'testi-card';
-          card.innerHTML = `
-            <span class="quote-icon">&#10078;</span>
-            <p>${r.text}</p>
-            <div class="testi-author">
-              <div class="testi-avatar">${r.init}</div>
-              <span class="testi-name">${r.name}</span>
-            </div>`;
-          slide.appendChild(card);
-        });
-        return slide;
-      }
+        // Split reviews into pages
+        function getPages() {
+          const pp = perPage();
+          const pages = [];
+          for (let i = 0; i < REVIEWS.length; i += pp) {
+            pages.push(REVIEWS.slice(i, i + pp));
+          }
+          return pages;
+        }
 
-      // Populate track: clone of last → real slides → clone of first (for infinite loop)
-      function buildTrack() {
-        track.innerHTML = '';
-        const pages = getPages();
-        track.appendChild(makeSlide(pages[pages.length - 1]).cloneNode(true));
-        pages.forEach(p => track.appendChild(makeSlide(p)));
-        track.appendChild(makeSlide(pages[0]).cloneNode(true));
-      }
+        // Build one slide element; cards use flex:1 to always fill the row
+        function makeSlide(reviews) {
+          const slide = document.createElement('div');
+          slide.className = 'testi-slide';
+          reviews.forEach(r => {
+            const card = document.createElement('div');
+            card.className = 'testi-card';
+            card.innerHTML = `
+              <span class="quote-icon">&#10078;</span>
+              <p>${r.text}</p>
+              <div class="testi-author">
+                <div class="testi-avatar">${r.init}</div>
+                <span class="testi-name">${r.name}</span>
+              </div>`;
+            slide.appendChild(card);
+          });
+          return slide;
+        }
 
-      // Render dot indicators
-      function buildDots() {
-        dots.innerHTML = '';
-        getPages().forEach((_, i) => {
-          const d = document.createElement('button');
-          d.className = 'testi-dot' + (i === current ? ' active' : '');
-          d.addEventListener('click', () => goTo(i, true));
-          dots.appendChild(d);
-        });
-      }
+        // Populate track: clone of last → real slides → clone of first (for infinite loop)
+        function buildTrack() {
+          track.innerHTML = '';
+          const pages = getPages();
+          track.appendChild(makeSlide(pages[pages.length - 1]).cloneNode(true));
+          pages.forEach(p => track.appendChild(makeSlide(p)));
+          track.appendChild(makeSlide(pages[0]).cloneNode(true));
+        }
 
-      // Move track to slide index; slot 0 in DOM is always the clone of the last slide
-      function setTranslate(index, animate) {
-        const w = wrapper.offsetWidth;
-        const offset = (index + 1) * w;
-        track.style.transition = animate ? 'transform 0.4s ease' : 'none';
-        track.style.transform  = 'translateX(-' + offset + 'px)';
-      }
+        // Render dot indicators
+        function buildDots() {
+          dots.innerHTML = '';
+          getPages().forEach((_, i) => {
+            const d = document.createElement('button');
+            d.className = 'testi-dot' + (i === current ? ' active' : '');
+            d.addEventListener('click', () => goTo(i, true));
+            dots.appendChild(d);
+          });
+        }
 
-      function goTo(index, animate) {
-        current = index;
-        setTranslate(current, animate);
-        buildDots();
-      }
+        // Move track to slide index; slot 0 in DOM is always the clone of the last slide
+        function setTranslate(index, animate) {
+          const w = wrapper.offsetWidth;
+          const offset = (index + 1) * w;
+          track.style.transition = animate ? 'transform 0.4s ease' : 'none';
+          track.style.transform  = 'translateX(-' + offset + 'px)';
+        }
 
-      // After sliding to a clone, silently jump to the real counterpart
-      function onTransitionEnd() {
-        const pages = getPages();
-        if (current >= pages.length) { current = 0; setTranslate(current, false); buildDots(); }
-        if (current < 0) { current = pages.length - 1; setTranslate(current, false); buildDots(); }
-        animating = false;
-      }
+        function goTo(index, animate) {
+          current = index;
+          setTranslate(current, animate);
+          buildDots();
+        }
 
-      function next() { if (animating) return; animating = true; goTo(current + 1, true); }
-      function prev() { if (animating) return; animating = true; goTo(current - 1, true); }
+        // After sliding to a clone, silently jump to the real counterpart
+        function onTransitionEnd() {
+          const pages = getPages();
+          if (current >= pages.length) { current = 0; setTranslate(current, false); buildDots(); }
+          if (current < 0) { current = pages.length - 1; setTranslate(current, false); buildDots(); }
+          animating = false;
+        }
 
-      function init() { buildTrack(); buildDots(); setTranslate(current, false); }
+        function next() { if (animating) return; animating = true; goTo(current + 1, true); }
+        function prev() { if (animating) return; animating = true; goTo(current - 1, true); }
 
-      track.addEventListener('transitionend', onTransitionEnd);
-      nextBtn.addEventListener('click', next);
-      prevBtn.addEventListener('click', prev);
-      window.addEventListener('resize', () => { current = 0; init(); });
-      init();
-    })();
-  </script>
-</section>
+        function init() { buildTrack(); buildDots(); setTranslate(current, false); }
+
+        track.addEventListener('transitionend', onTransitionEnd);
+        nextBtn.addEventListener('click', next);
+        prevBtn.addEventListener('click', prev);
+        window.addEventListener('resize', () => { current = 0; init(); });
+        init();
+      })();
+    </script>
+  </section>
 
   <!-- Legacy / About -->
   <section class="legacy" id="about">
