@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subscription Plans – Global Speak Academy</title>
-  <meta name="description" content="Flexible English learning plans for adults, kids, and professionals. Choose from monthly subscriptions, pay-as-you-go classes, or class packages.">
+  <meta name="description"
+    content="Flexible English learning plans for adults, kids, and professionals. Choose from monthly subscriptions, pay-as-you-go classes, or class packages.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="assets/subscription-plans.css">
@@ -22,15 +24,16 @@
       <li class="has-dropdown">
         <a href="#">Programs <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
         <ul class="dropdown">
-          <li><a href="#">Adult Lessons</a></li>
-          <li><a href="#">Kids Lessons</a></li>
-          <li><a href="#">Group Classes</a></li>
-          <li><a href="#">Self Guided Lessons</a></li>
-          <li><a href="#">Corporate Training</a></li>
+          <li><a href="index.html#programs">Adult Lessons</a></li>
+          <li><a href="index.html#programs">Kids Lessons</a></li>
+          <li><a href="index.html#programs">Group Classes</a></li>
+          <li><a href="index.html#programs">Self Guided Lessons</a></li>
+          <li><a href="index.html#programs">Corporate Training</a></li>
         </ul>
       </li>
       <li class="has-dropdown">
-        <a href="#" style="color:var(--dark-gold)">Pricing <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <a href="#" style="color:var(--dark-gold)">Pricing <img src="./assets/img/arrow.svg" alt=""
+            class="nav-arrow"></a>
         <ul class="dropdown">
           <li><a href="subscription-plans.html">Subscription Plans</a></li>
         </ul>
@@ -39,13 +42,19 @@
       <li><a href="index.html#testimonials">Testimonials</a></li>
       <li><a href="#">English Resources</a></li>
       <li><a href="index.html#contact">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">More <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="#">Self Guided Lessons</a></li>
+          <li><a href="#">Corporate Training</a></li>
+          <li><a href="#">Career at Global Speak Academy</a></li>
+          <li><a href="#">English Resources</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </li>
     </ul>
 
     <a class="btn-apply" href="index.html#contact">Apply Now</a>
-
-    <button class="burger" id="burger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
 
     <script>
       window.addEventListener('scroll', () => {
@@ -53,6 +62,12 @@
         nav.classList.toggle('scrolled', window.scrollY > 40);
       });
     </script>
+
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 
   <!-- MOBILE MENU -->
@@ -69,11 +84,11 @@
     <div class="mob-dropdown-item">
       <button class="mob-dropdown-btn">Programs <span class="mob-arrow">&#8250;</span></button>
       <div class="mob-dropdown">
-        <a href="#">Adult Lessons</a>
-        <a href="#">Kids Lessons</a>
-        <a href="#">Group Classes</a>
-        <a href="#">Self Guided Lessons</a>
-        <a href="#">Corporate Training</a>
+        <a href="index.html#programs">Adult Lessons</a>
+        <a href="index.html#programs">Kids Lessons</a>
+        <a href="index.html#programs">Group Classes</a>
+        <a href="index.html#programs">Self Guided Lessons</a>
+        <a href="index.html#programs">Corporate Training</a>
       </div>
     </div>
 
@@ -83,11 +98,23 @@
         <a href="subscription-plans.html">Subscription Plans</a>
       </div>
     </div>
-    
+
     <a href="index.html#about" class="mob-link">About</a>
     <a href="index.html#testimonials" class="mob-link">Testimonials</a>
     <a href="#" class="mob-link">English Resources</a>
     <a href="index.html#contact" class="mob-link">Contact</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">More <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="#">Self Guided Lessons</a>
+        <a href="#">Corporate Training</a>
+        <a href="#">Career at Global Speak Academy</a>
+        <a href="#">English Resources</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+
     <a href="index.html#contact" class="mob-apply">Apply Now</a>
   </div>
 
@@ -96,7 +123,8 @@
   <div class="page-hero">
     <span class="section-tag">Flexible Plans for Every Student</span>
     <h1>We have flexible options<br>for every student!</h1>
-    <p>Choose a monthly subscription, a class package, or pay-as-you-go — whatever works best for your schedule and goals.</p>
+    <p>Choose a monthly subscription, a class package, or pay-as-you-go — whatever works best for your schedule and
+      goals.</p>
   </div>
 
 
@@ -116,7 +144,8 @@
   ════════════════════════════════════════════ -->
   <section class="plan-section visible" id="tab-adult">
     <p class="plan-section-title">Subscription Plans — Adult Monthly Learning</p>
-    <p class="plan-section-subtitle">Private live lessons, prerecorded content, and monthly certificates — all rolled into one plan.</p>
+    <p class="plan-section-subtitle">Private live lessons, prerecorded content, and monthly certificates — all rolled
+      into one plan.</p>
 
     <div class="plans-grid">
 
@@ -210,7 +239,8 @@
   ════════════════════════════════════════════ -->
   <section class="plan-section" id="tab-kids">
     <p class="plan-section-title">Kids English Programs — Ages 5–12</p>
-    <p class="plan-section-subtitle">Private or group options designed to build confidence, phonics, and fluency in young learners.</p>
+    <p class="plan-section-subtitle">Private or group options designed to build confidence, phonics, and fluency in
+      young learners.</p>
 
     <div class="plans-grid">
 
@@ -423,7 +453,8 @@
   ════════════════════════════════════════════ -->
   <section class="plan-section" id="tab-packages">
     <p class="plan-section-title">Class Packages</p>
-    <p class="plan-section-subtitle">One-time payment bundles for students who want flexibility and long-term learning without a monthly subscription.</p>
+    <p class="plan-section-subtitle">One-time payment bundles for students who want flexibility and long-term learning
+      without a monthly subscription.</p>
 
     <div class="plans-grid cols-3">
 
@@ -494,26 +525,27 @@
   ════════════════════════════════════════════ -->
   <section class="plan-section" id="tab-selfguided">
     <p class="plan-section-title">Self-Guided Learning</p>
-    <p class="plan-section-subtitle">For students who prefer independent study or want affordable English access at their own pace.</p>
+    <p class="plan-section-subtitle">For students who prefer independent study or want affordable English access at
+      their own pace.</p>
 
-      <div class="plans-grid" style="grid-template-columns: repeat(3, 1fr);">
-        <div></div>
-        <div class="plan-card featured">
-          <p class="plan-name">Self-Guided English Program</p>
-          <p class="plan-tagline">Study anytime, anywhere — completely self-paced</p>
-          <p class="plan-price">$29<span>/month</span></p>
-          <div class="plan-divider"></div>
-          <ul class="plan-features">
-            <li>Video lessons on demand</li>
-            <li>Grammar + vocabulary modules</li>
-            <li>Monthly mini quizzes</li>
-            <li>Worksheets & exercises</li>
-            <li>Access anytime, 24/7</li>
-          </ul>
-          <a href="index.html#contact" class="plan-cta">Get Access</a>
-        </div>
-        <div></div>
+    <div class="plans-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div></div>
+      <div class="plan-card featured">
+        <p class="plan-name">Self-Guided English Program</p>
+        <p class="plan-tagline">Study anytime, anywhere — completely self-paced</p>
+        <p class="plan-price">$29<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Video lessons on demand</li>
+          <li>Grammar + vocabulary modules</li>
+          <li>Monthly mini quizzes</li>
+          <li>Worksheets & exercises</li>
+          <li>Access anytime, 24/7</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Get Access</a>
       </div>
+      <div></div>
+    </div>
   </section>
 
 
@@ -538,7 +570,8 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-ans">
-        Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.
+        Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing
+        cycle.
       </div>
     </div>
 
@@ -548,7 +581,8 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-ans">
-        We understand life gets busy. You can reschedule a class up to 24 hours in advance. Please note that missed classes without prior notice may not be refunded.
+        We understand life gets busy. You can reschedule a class up to 24 hours in advance. Please note that missed
+        classes without prior notice may not be refunded.
       </div>
     </div>
 
@@ -558,7 +592,8 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-ans">
-        All of our teachers are certified, experienced educators with native or near-native fluency in English. Many hold TEFL/TESOL certifications.
+        All of our teachers are certified, experienced educators with native or near-native fluency in English. Many
+        hold TEFL/TESOL certifications.
       </div>
     </div>
 
@@ -568,7 +603,8 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-ans">
-        Classes are conducted via Zoom or Google Meet. Once you enroll, your teacher will send a calendar invite with the meeting link before your first session.
+        Classes are conducted via Zoom or Google Meet. Once you enroll, your teacher will send a calendar invite with
+        the meeting link before your first session.
       </div>
     </div>
 
@@ -578,7 +614,8 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-ans">
-        Yes, all monthly subscriptions can be cancelled at any time with no cancellation fee. Your access continues until the end of your paid billing period.
+        Yes, all monthly subscriptions can be cancelled at any time with no cancellation fee. Your access continues
+        until the end of your paid billing period.
       </div>
     </div>
 
@@ -588,7 +625,8 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-ans">
-        Yes — the 10-class package is valid for 3 months and the 20-class package for 6 months from the date of purchase. Extensions may be available upon request.
+        Yes — the 10-class package is valid for 3 months and the 20-class package for 6 months from the date of
+        purchase. Extensions may be available upon request.
       </div>
     </div>
 
@@ -600,7 +638,8 @@
     <div class="footer-main">
       <div class="footer-logo">
         <a href="index.html">
-          <img src="./assets/img/logo-gold.png" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+          <img src="./assets/img/logo-gold.png" alt="Global Speak Academy"
+            style="height:56px;width:auto;display:block;">
         </a>
       </div>
       <ul class="footer-nav">
@@ -705,4 +744,5 @@
   </script>
 
 </body>
+
 </html>
