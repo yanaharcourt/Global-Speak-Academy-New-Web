@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Plans – Global Speak Academy</title>
+  <meta name="description" content="Flexible English learning plans for adults, kids, and professionals. Choose from monthly subscriptions, pay-as-you-go classes, or class packages.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/subscription-plans.css">
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+    </a>
+
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="#">Programs <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="#">Adult Lessons</a></li>
+          <li><a href="#">Kids Lessons</a></li>
+          <li><a href="#">Group Classes</a></li>
+          <li><a href="#">Self Guided Lessons</a></li>
+          <li><a href="#">Corporate Training</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#" style="color:var(--dark-gold)">Pricing <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="subscription-plans.html">Subscription Plans</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Testimonials</a></li>
+      <li><a href="#">English Resources</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+
+    <a class="btn-apply" href="index.html#contact">Apply Now</a>
+
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      });
+    </script>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mob-header">
+      <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:40px;width:auto;display:block;">
+      <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Programs <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="#">Adult Lessons</a>
+        <a href="#">Kids Lessons</a>
+        <a href="#">Group Classes</a>
+        <a href="#">Self Guided Lessons</a>
+        <a href="#">Corporate Training</a>
+      </div>
+    </div>
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Pricing <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="subscription-plans.html">Subscription Plans</a>
+      </div>
+    </div>
+    <a href="index.html#about" class="mob-link">About</a>
+    <a href="index.html#testimonials" class="mob-link">Testimonials</a>
+    <a href="#" class="mob-link">English Resources</a>
+    <a href="index.html#contact" class="mob-link">Contact</a>
+    <a href="index.html#contact" class="mob-apply">Apply Now</a>
+  </div>
+
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="section-tag">Flexible Plans for Every Student</span>
+    <h1>We have flexible options<br>for every student!</h1>
+    <p>Choose a monthly subscription, a class package, or pay-as-you-go — whatever works best for your schedule and goals.</p>
+  </div>
+
+
+  <!-- TAB NAVIGATION -->
+  <div class="tabs-wrap" id="tabsWrap">
+    <button class="tab-btn active" data-tab="adult">Adult Monthly</button>
+    <button class="tab-btn" data-tab="kids">Kids Programs</button>
+    <button class="tab-btn" data-tab="group">Group Classes</button>
+    <button class="tab-btn" data-tab="paygo">Pay-As-You-Go</button>
+    <button class="tab-btn" data-tab="packages">Class Packages</button>
+    <button class="tab-btn" data-tab="selfguided">Self-Guided</button>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 1 — ADULT MONTHLY SUBSCRIPTIONS
+  ════════════════════════════════════════════ -->
+  <section class="plan-section visible" id="tab-adult">
+    <p class="plan-section-title">Subscription Plans — Adult Monthly Learning</p>
+    <p class="plan-section-subtitle">Private live lessons, prerecorded content, and monthly certificates — all rolled into one plan.</p>
+
+    <div class="plans-grid">
+
+      <div class="plan-card">
+        <p class="plan-name">Starter Journey</p>
+        <p class="plan-tagline">Perfect for beginners or busy adults</p>
+        <p class="plan-price">$45<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>1 private live class per week (60 min)</li>
+          <li>1 prerecorded lesson per month</li>
+          <li>3 self-guided lessons</li>
+          <li>Monthly certificate</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Get Started</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Rising Voice</p>
+        <p class="plan-tagline">Improve fluency with more speaking practice</p>
+        <p class="plan-price">$90<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>2 private live classes per week (60 min)</li>
+          <li>1 prerecorded lesson</li>
+          <li>4 self-guided lessons</li>
+          <li>Monthly assessment + certificate</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Get Started</a>
+      </div>
+
+      <div class="plan-card featured">
+        <span class="badge-popular">Most Popular</span>
+        <p class="plan-name">Global Fluency Intensive</p>
+        <p class="plan-tagline">Achieve real fluency faster</p>
+        <p class="plan-price">$120<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>3 private live classes per week (60 min)</li>
+          <li>1 group conversation class</li>
+          <li>1 prerecorded lesson</li>
+          <li>2 self-guided lessons</li>
+          <li>Monthly certificate</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Get Started</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Fluency Builder</p>
+        <p class="plan-tagline">Accelerate your progress with daily practice</p>
+        <p class="plan-price">$180<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>4 private live classes per week (60 min)</li>
+          <li>1 group conversation class</li>
+          <li>2 prerecorded lessons</li>
+          <li>4 self-guided lessons</li>
+          <li>Monthly certificate</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Get Started</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Global Pro</p>
+        <p class="plan-tagline">For professionals, executives & serious learners</p>
+        <p class="plan-price">$350<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>5 private classes per week (90 min)</li>
+          <li>2 group lessons</li>
+          <li>3 prerecorded lessons</li>
+          <li>6 self-guided lessons</li>
+          <li>Priority scheduling</li>
+          <li>Personalized learning plan</li>
+          <li>Monthly certificate</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Get Started</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 2 — KIDS PROGRAMS
+  ════════════════════════════════════════════ -->
+  <section class="plan-section" id="tab-kids">
+    <p class="plan-section-title">Kids English Programs — Ages 5–12</p>
+    <p class="plan-section-subtitle">Private or group options designed to build confidence, phonics, and fluency in young learners.</p>
+
+    <div class="plans-grid">
+
+      <div class="plan-card">
+        <p class="plan-name">Kids Starter</p>
+        <p class="plan-tagline">A gentle first step into English</p>
+        <p class="plan-price">$45<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>1 private class per week (45 min)</li>
+          <li>Monthly vocabulary + activity sheet</li>
+          <li>Access to kids' virtual library</li>
+          <li>Monthly certificate</li>
+          <li>Parent progress reports</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Enroll Now</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Kids Fluency</p>
+        <p class="plan-tagline">More practice, more confidence</p>
+        <p class="plan-price">$60<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>2 private classes per week (45 min)</li>
+          <li>Monthly vocabulary + activity sheet</li>
+          <li>Access to kids' virtual library</li>
+          <li>Monthly certificate</li>
+          <li>Parent progress reports</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Enroll Now</a>
+      </div>
+
+      <div class="plan-card featured">
+        <span class="badge-popular">Best Value</span>
+        <p class="plan-name">Kids Group English</p>
+        <p class="plan-tagline">Fun, social learning with peers</p>
+        <p class="plan-price">$60<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>4 group classes per week (45 min)</li>
+          <li>Small group — max 6 students</li>
+          <li>Reading + speaking practice</li>
+          <li>Monthly certificate</li>
+          <li>Parent progress reports</li>
+          <li>Access to kids' virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Enroll Now</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Kids Fluency Pro</p>
+        <p class="plan-tagline">Reading, phonics, and vocabulary in depth</p>
+        <p class="plan-price">$120<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>4 private classes per week (45 min)</li>
+          <li>Reading, phonics, vocabulary focus</li>
+          <li>Monthly worksheets</li>
+          <li>Access to kids' virtual library</li>
+          <li>Parent progress reports</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Enroll Now</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Kids Premium</p>
+        <p class="plan-tagline">For dedicated young learners</p>
+        <p class="plan-price">$220<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>5 private classes per week (60 min)</li>
+          <li>Reading + writing fluency</li>
+          <li>Weekly assignments</li>
+          <li>Access to kids' virtual library</li>
+          <li>Monthly certificate</li>
+          <li>Parent progress reports</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Enroll Now</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 3 — GROUP CLASSES
+  ════════════════════════════════════════════ -->
+  <section class="plan-section" id="tab-group">
+    <p class="plan-section-title">Group Lessons — Teens & Adults</p>
+    <p class="plan-section-subtitle">Small-group English lessons for speaking, accent work, and exam preparation.</p>
+
+    <div class="plans-grid cols-3">
+
+      <div class="plan-card">
+        <p class="plan-name">Adult Group English</p>
+        <p class="plan-tagline">Speaking & conversation in a social setting</p>
+        <p class="plan-price">$70<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>4 group classes per week (60 min)</li>
+          <li>Speaking & conversation focus</li>
+          <li>Vocabulary + idioms</li>
+          <li>Monthly certificate</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Join Group</a>
+      </div>
+
+      <div class="plan-card featured">
+        <p class="plan-name">Accent & Pronunciation Group</p>
+        <p class="plan-tagline">Sound like a native speaker</p>
+        <p class="plan-price">$80<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>4 group pronunciation lessons per week (60 min)</li>
+          <li>American accent training</li>
+          <li>Guided speaking practice</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Join Group</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">TOEFL Prep Group</p>
+        <p class="plan-tagline">Score high on your exam</p>
+        <p class="plan-price">$120<span>/month</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>4 group lessons per week (90 min)</li>
+          <li>Academic writing + speaking</li>
+          <li>Vocabulary training</li>
+          <li>Full mock exam included</li>
+          <li>Access to virtual library</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Join Group</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 4 — PAY-AS-YOU-GO
+  ════════════════════════════════════════════ -->
+  <section class="plan-section" id="tab-paygo">
+    <p class="plan-section-title">Pay-As-You-Go Classes</p>
+    <p class="plan-section-subtitle">Flexible option — pay only when you attend, with no monthly commitment.</p>
+
+    <div class="plans-grid cols-3">
+
+      <div class="plan-card">
+        <p class="plan-name">Adult Private Class</p>
+        <p class="plan-tagline">Individual support for adults</p>
+        <p class="plan-price">$40<span>/class · 60 min</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>One 60-minute live private lesson</li>
+          <li>Speaking, listening, grammar & vocabulary</li>
+          <li>Personalized corrections during class</li>
+          <li>Homework or practice activity</li>
+          <li>Teacher notes with improvements</li>
+          <li>Recording available if you attend</li>
+          <li>Flexible scheduling — choose your time</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Book a Class</a>
+      </div>
+
+      <div class="plan-card featured">
+        <span class="badge-popular">Premium</span>
+        <p class="plan-name">Business or Specialty Class</p>
+        <p class="plan-tagline">For professionals & exam takers</p>
+        <p class="plan-price">$55<span>/class · 60 min</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>One 60-minute private premium lesson</li>
+          <li>Business English, presentations, emails</li>
+          <li>OR IELTS/TOEFL full skills training</li>
+          <li>Advanced vocabulary + academic phrasing</li>
+          <li>Mock interview or exam-style questions</li>
+          <li>Detailed feedback + improvement plan</li>
+          <li>Recording available if you attend</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Book a Class</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Kids Private Class</p>
+        <p class="plan-tagline">Ages 5–12 · confidence & foundations</p>
+        <p class="plan-price">$25<span>/class · 30 min</span></p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>One 30-minute live private kids lesson</li>
+          <li>Reading, phonics, speaking & vocabulary</li>
+          <li>Kids-friendly activities & visuals</li>
+          <li>Mini homework sheet</li>
+          <li>Teacher notes sent to parent</li>
+          <li>Level-appropriate (Ages 5–12)</li>
+          <li>Recording available if you attend</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Book a Class</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 5 — CLASS PACKAGES
+  ════════════════════════════════════════════ -->
+  <section class="plan-section" id="tab-packages">
+    <p class="plan-section-title">Class Packages</p>
+    <p class="plan-section-subtitle">One-time payment bundles for students who want flexibility and long-term learning without a monthly subscription.</p>
+
+    <div class="plans-grid cols-3">
+
+      <div class="plan-card">
+        <p class="plan-name">10-Class Package</p>
+        <p class="plan-tagline">Flexible scheduling, no monthly commitment</p>
+        <p class="plan-price">$350</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Ten (10) private 60-minute classes</li>
+          <li>Use anytime within 3 months</li>
+          <li>Personalized learning plan</li>
+          <li>Speaking, vocabulary, grammar & writing</li>
+          <li>Teacher feedback after each session</li>
+          <li>Mini homework after each class</li>
+          <li>Progress check after lesson 5</li>
+          <li>Monthly certificate + recording</li>
+          <li>Option to upgrade to a subscription</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Buy Package</a>
+      </div>
+
+      <div class="plan-card featured">
+        <span class="badge-popular">Best Value</span>
+        <p class="plan-name">20-Class Package</p>
+        <p class="plan-tagline">Steady improvement with long-term support</p>
+        <p class="plan-price">$650</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Twenty (20) private 60-minute classes</li>
+          <li>Use anytime within 6 months</li>
+          <li>Bonus: 1 FREE class — total 21!</li>
+          <li>Customized learning plan</li>
+          <li>Weekly homework (optional)</li>
+          <li>Detailed progress report at class 10</li>
+          <li>Certificate of achievement</li>
+          <li>Priority scheduling</li>
+          <li>Option to extend or renew anytime</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Buy Package</a>
+      </div>
+
+      <div class="plan-card">
+        <p class="plan-name">Fast-Track Test Prep</p>
+        <p class="plan-tagline">For university, immigration & career exams</p>
+        <p class="plan-price">$500</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Eight (8) private 60-minute exam-prep classes</li>
+          <li>Speaking, reading, listening & writing</li>
+          <li>Academic vocabulary workbook</li>
+          <li>Test strategies + writing templates</li>
+          <li>One (1) full mock exam + detailed scoring</li>
+          <li>Practice questions after each lesson</li>
+          <li>Certificate of completion</li>
+          <li>Priority messaging for test questions</li>
+          <li>Flexible scheduling</li>
+        </ul>
+        <a href="index.html#contact" class="plan-cta">Buy Package</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 6 — SELF-GUIDED
+  ════════════════════════════════════════════ -->
+  <section class="plan-section" id="tab-selfguided">
+    <p class="plan-section-title">Self-Guided Learning</p>
+    <p class="plan-section-subtitle">For students who prefer independent study or want affordable English access at their own pace.</p>
+
+      <div class="plans-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div></div>
+        <div class="plan-card featured">
+          <p class="plan-name">Self-Guided English Program</p>
+          <p class="plan-tagline">Study anytime, anywhere — completely self-paced</p>
+          <p class="plan-price">$29<span>/month</span></p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>Video lessons on demand</li>
+            <li>Grammar + vocabulary modules</li>
+            <li>Monthly mini quizzes</li>
+            <li>Worksheets & exercises</li>
+            <li>Access anytime, 24/7</li>
+          </ul>
+          <a href="index.html#contact" class="plan-cta">Get Access</a>
+        </div>
+        <div></div>
+      </div>
+  </section>
+
+
+  <!-- TRIAL BANNER -->
+  <div class="trial-banner-wrap">
+    <div class="trial-banner">
+      <h2>Not sure where to start?</h2>
+      <p>Try a $10 trial lesson with one of our expert teachers — no commitment required.</p>
+      <a href="index.html#contact">Book Your $10 Trial Lesson →</a>
+    </div>
+  </div>
+
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <span class="section-tag">Common Questions</span>
+    <h2 class="section-h2">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        Can I switch plans after I sign up?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-ans">
+        Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        What happens if I miss a class?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-ans">
+        We understand life gets busy. You can reschedule a class up to 24 hours in advance. Please note that missed classes without prior notice may not be refunded.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        Are the teachers native English speakers?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-ans">
+        All of our teachers are certified, experienced educators with native or near-native fluency in English. Many hold TEFL/TESOL certifications.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        How do online classes work?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-ans">
+        Classes are conducted via Zoom or Google Meet. Once you enroll, your teacher will send a calendar invite with the meeting link before your first session.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        Can I cancel my subscription anytime?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-ans">
+        Yes, all monthly subscriptions can be cancelled at any time with no cancellation fee. Your access continues until the end of your paid billing period.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn" onclick="toggleFaq(this)">
+        Do class packages expire?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-ans">
+        Yes — the 10-class package is valid for 3 months and the 20-class package for 6 months from the date of purchase. Extensions may be available upon request.
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="./assets/img/logo-gold.png" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+        </a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="subscription-plans.html">Pricing</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="LinkedIn">
+          <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <img src="./assets/img/Instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Facebook">
+          <img src="./assets/img/Facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Global Speak Academy &ndash; All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made by <a href="http://yanaharcourt.dev" class="designer-link">Yana Harcourt</a></p>
+    </div>
+  </footer>
+
+
+  <script>
+    /* ── TAB SWITCHING ── */
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabSections = document.querySelectorAll('.plan-section');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabSections.forEach(s => s.classList.remove('visible'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('visible');
+        // Scroll to tabs smoothly
+        document.getElementById('tabsWrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    /* ── FAQ ── */
+    function toggleFaq(btn) {
+      const ans = btn.nextElementSibling;
+      const isOpen = ans.classList.contains('open');
+      document.querySelectorAll('.faq-ans').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-btn').forEach(b => b.classList.remove('open'));
+      if (!isOpen) { ans.classList.add('open'); btn.classList.add('open'); }
+    }
+
+    /* ── MOBILE MENU ── */
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobClose = document.getElementById('mobClose');
+
+    function openMenu() { burger.classList.add('open'); mobileMenu.classList.add('open'); document.body.classList.add('menu-open'); }
+    function closeMenu() { burger.classList.remove('open'); mobileMenu.classList.remove('open'); document.body.classList.remove('menu-open'); }
+
+    burger.addEventListener('click', () => burger.classList.contains('open') ? closeMenu() : openMenu());
+    mobClose.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    document.querySelectorAll('.mob-dropdown-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.nextElementSibling;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.mob-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.mob-arrow').forEach(a => a.classList.remove('open'));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.querySelector('.mob-arrow').classList.add('open');
+        }
+      });
+    });
+
+    /* ── SCROLL ANIMATION ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.06 });
+
+    document.querySelectorAll('.plan-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      io.observe(el);
+    });
+  </script>
+
+</body>
+</html>

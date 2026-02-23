@@ -1,0 +1,796 @@
+/* ── PAGE HERO ── */
+.page-hero {
+    padding: 140px 40px 72px;
+    text-align: center;
+    background: var(--bg-soft);
+}
+
+.page-hero .section-tag {
+    margin-bottom: 16px;
+}
+
+.page-hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.page-hero p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ── TAB SWITCHER ── */
+.tabs-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    padding: 48px 40px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tabs-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1.5px solid var(--btn-outline);
+    background: transparent;
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.22s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.tab-btn:hover {
+    border-color: var(--dark-gold);
+    color: var(--dark-gold);
+}
+
+.tab-btn.active {
+    background: var(--dark-gold);
+    border-color: var(--dark-gold);
+    color: #fff;
+}
+
+/* ── PLAN SECTIONS ── */
+.plan-section {
+    padding: 56px 120px 80px;
+    display: none;
+}
+
+.plan-section.visible {
+    display: block;
+}
+
+.plan-section-title {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.plan-section-subtitle {
+    color: var(--text-light);
+    margin-bottom: 40px;
+    font-size: 0.97rem;
+}
+
+/* ── CARDS GRID ── */
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.plans-grid.cols-3 {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.plans-grid.cols-2 {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+
+/* ── PLAN CARD ── */
+.plan-card {
+    background: #fff;
+    border: 1.5px solid #EEEEEE;
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    position: relative;
+}
+
+.plan-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.09);
+    transform: translateY(-3px);
+}
+
+.plan-card.featured {
+    border-color: var(--dark-gold);
+    background: #FEFCF7;
+}
+
+.badge-popular {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-gold);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 4px 14px;
+    border-radius: 100px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.plan-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.plan-tagline {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.plan-price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.plan-price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.plan-divider {
+    height: 1px;
+    background: var(--faq-lines);
+    margin: 20px 0;
+}
+
+.plan-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.45;
+}
+
+.plan-features li::before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23C4AA6C' fill-opacity='.15'/%3E%3Cpath d='M6 10l3 3 5-5' stroke='%23C4AA6C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+.plan-cta {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    padding: 13px 24px;
+    border-radius: 10px;
+    font-size: 0.93rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.22s ease;
+    border: 1.5px solid var(--dark-gold);
+    color: var(--dark-gold);
+    background: transparent;
+}
+
+.plan-card.featured .plan-cta,
+.plan-cta.solid {
+    background: var(--dark-gold);
+    color: #fff;
+}
+
+.plan-cta:hover {
+    opacity: 0.82;
+}
+
+/* ── TRIAL BANNER ── */
+.trial-banner-wrap {
+    padding: 0 120px 80px;
+}
+
+.trial-banner {
+    background: linear-gradient(135deg, #1A1A1A 0%, #2d2a24 100%);
+    border-radius: 20px;
+    padding: 56px 40px;
+    text-align: center;
+}
+
+.trial-banner h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.trial-banner p {
+    color: #b0a898;
+    margin-bottom: 28px;
+    font-size: 1rem;
+}
+
+.trial-banner a {
+    display: inline-block;
+    padding: 14px 36px;
+    background: var(--dark-gold);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.97rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.trial-banner a:hover {
+    opacity: 0.85;
+}
+
+/* ── FAQ ── */
+.faq-section {
+    padding: 0 120px 100px;
+}
+
+.faq-section .section-tag {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.faq-section .section-h2 {
+    margin-bottom: 36px;
+}
+
+/* ══════════════════════════════════════════
+       RESPONSIVE BREAKPOINTS
+       Логика шрифтов и отступов идентична main.css
+    ══════════════════════════════════════════ */
+
+/* 1920px+ — большие мониторы */
+@media (min-width: 1920px) {
+    .page-hero {
+        padding: 160px 120px 100px;
+    }
+
+    .page-hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .page-hero p {
+        font-size: 1.25rem;
+        max-width: 700px;
+    }
+
+    .tabs-wrap {
+        padding: 64px 120px 0;
+    }
+
+    .tab-btn {
+        font-size: 1rem;
+        padding: 12px 26px;
+    }
+
+    .plan-section {
+        padding: 72px 160px 100px;
+    }
+
+    .plan-section-title {
+        font-size: 1.9rem;
+    }
+
+    .plan-section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .plan-name {
+        font-size: 1.25rem;
+    }
+
+    .plan-tagline {
+        font-size: 1rem;
+    }
+
+    .plan-price {
+        font-size: 2.8rem;
+    }
+
+    .plan-price span {
+        font-size: 1.1rem;
+    }
+
+    .plan-features li {
+        font-size: 1rem;
+    }
+
+    .plan-cta {
+        font-size: 1rem;
+        padding: 15px 28px;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 160px 100px;
+    }
+
+    .trial-banner {
+        padding: 72px 56px;
+    }
+
+    .trial-banner h2 {
+        font-size: 2.2rem;
+    }
+
+    .trial-banner p {
+        font-size: 1.15rem;
+    }
+
+    .trial-banner a {
+        font-size: 1.1rem;
+        padding: 16px 44px;
+    }
+
+    .faq-section {
+        padding: 0 160px 120px;
+    }
+}
+
+/* 1600px–1919px */
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .page-hero {
+        padding: 150px 120px 88px;
+    }
+
+    .page-hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .page-hero p {
+        font-size: 1.15rem;
+    }
+
+    .tabs-wrap {
+        padding: 56px 80px 0;
+    }
+
+    .tab-btn {
+        font-size: 0.95rem;
+        padding: 11px 24px;
+    }
+
+    .plan-section {
+        padding: 64px 140px 88px;
+    }
+
+    .plan-section-title {
+        font-size: 1.75rem;
+    }
+
+    .plan-section-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .plan-name {
+        font-size: 1.15rem;
+    }
+
+    .plan-price {
+        font-size: 2.5rem;
+    }
+
+    .plan-features li {
+        font-size: 0.95rem;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 140px 88px;
+    }
+
+    .trial-banner {
+        padding: 64px 48px;
+    }
+
+    .trial-banner h2 {
+        font-size: 2rem;
+    }
+
+    .trial-banner p {
+        font-size: 1.05rem;
+    }
+
+    .faq-section {
+        padding: 0 140px 110px;
+    }
+}
+
+/* 1280px–1599px — десктоп по умолчанию, стили без изменений */
+
+/* до 1280px */
+@media (max-width: 1280px) {
+    .plan-section {
+        padding: 56px 80px 80px;
+    }
+
+    .plan-section-title {
+        font-size: 1.4rem;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 80px 80px;
+    }
+
+    .faq-section {
+        padding: 0 80px 100px;
+    }
+}
+
+/* до 1024px — планшет горизонтальный */
+@media (max-width: 1024px) {
+    .page-hero {
+        padding: 120px 40px 64px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+
+    .tabs-wrap {
+        padding: 40px 40px 0;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .plan-section {
+        padding: 48px 40px 64px;
+    }
+
+    .plan-section-title {
+        font-size: 1.3rem;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plans-grid.cols-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plan-price {
+        font-size: 2rem;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 40px 64px;
+    }
+
+    .trial-banner {
+        padding: 48px 36px;
+    }
+
+    .trial-banner h2 {
+        font-size: 1.6rem;
+    }
+
+    .faq-section {
+        padding: 0 40px 80px;
+    }
+}
+
+/* до 768px — планшет вертикальный */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 110px 24px 56px;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+
+    .tabs-wrap {
+        padding: 36px 0 0;
+        justify-content: flex-start;
+        padding-left: 24px;
+    }
+
+    .tab-btn {
+        font-size: 0.82rem;
+        padding: 9px 16px;
+    }
+
+    .plan-section {
+        padding: 40px 24px 56px;
+    }
+
+    .plan-section-title {
+        font-size: 1.2rem;
+    }
+
+    .plan-section-subtitle {
+        font-size: 0.92rem;
+        margin-bottom: 28px;
+    }
+
+    .plans-grid,
+    .plans-grid.cols-2,
+    .plans-grid.cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .plan-card {
+        padding: 24px 20px;
+    }
+
+    .plan-name {
+        font-size: 1rem;
+    }
+
+    .plan-price {
+        font-size: 1.9rem;
+    }
+
+    .plan-features li {
+        font-size: 0.88rem;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 24px 56px;
+    }
+
+    .trial-banner {
+        padding: 40px 24px;
+    }
+
+    .trial-banner h2 {
+        font-size: 1.45rem;
+    }
+
+    .trial-banner p {
+        font-size: 0.93rem;
+    }
+
+    .trial-banner a {
+        font-size: 0.9rem;
+        padding: 12px 28px;
+    }
+
+    .faq-section {
+        padding: 0 24px 72px;
+    }
+}
+
+/* до 414px — большие смартфоны */
+@media (max-width: 414px) {
+    .page-hero {
+        padding: 100px 20px 48px;
+    }
+
+    .page-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .tabs-wrap {
+        padding-left: 20px;
+    }
+
+    .tab-btn {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+
+    .plan-section {
+        padding: 36px 20px 48px;
+    }
+
+    .plan-card {
+        padding: 22px 18px;
+    }
+
+    .plan-price {
+        font-size: 1.75rem;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 20px 48px;
+    }
+
+    .trial-banner h2 {
+        font-size: 1.3rem;
+    }
+
+    .faq-section {
+        padding: 0 20px 64px;
+    }
+}
+
+/* до 375px */
+@media (max-width: 375px) {
+    .page-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .page-hero p {
+        font-size: 0.93rem;
+    }
+
+    .tab-btn {
+        font-size: 0.78rem;
+        padding: 8px 13px;
+    }
+
+    .plan-section {
+        padding: 32px 16px 44px;
+    }
+
+    .plan-card {
+        padding: 20px 16px;
+    }
+
+    .plan-price {
+        font-size: 1.6rem;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 16px 44px;
+    }
+
+    .trial-banner h2 {
+        font-size: 1.2rem;
+    }
+
+    .faq-section {
+        padding: 0 16px 56px;
+    }
+}
+
+/* до 360px */
+@media (max-width: 360px) {
+    .page-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .plan-section-title {
+        font-size: 1.1rem;
+    }
+
+    .plan-name {
+        font-size: 0.95rem;
+    }
+
+    .plan-price {
+        font-size: 1.5rem;
+    }
+
+    .plan-features li {
+        font-size: 0.85rem;
+    }
+
+    .plan-cta {
+        font-size: 0.88rem;
+    }
+}
+
+/* до 320px — самые маленькие экраны */
+@media (max-width: 320px) {
+    .page-hero {
+        padding: 96px 14px 40px;
+    }
+
+    .page-hero h1 {
+        font-size: 1.35rem;
+    }
+
+    .page-hero p {
+        font-size: 0.88rem;
+    }
+
+    .tabs-wrap {
+        padding-left: 14px;
+    }
+
+    .tab-btn {
+        font-size: 0.75rem;
+        padding: 7px 12px;
+    }
+
+    .plan-section {
+        padding: 28px 14px 40px;
+    }
+
+    .plan-card {
+        padding: 18px 14px;
+    }
+
+    .plan-name {
+        font-size: 0.9rem;
+    }
+
+    .plan-tagline {
+        font-size: 0.8rem;
+    }
+
+    .plan-price {
+        font-size: 1.4rem;
+    }
+
+    .plan-features li {
+        font-size: 0.82rem;
+    }
+
+    .plan-cta {
+        font-size: 0.85rem;
+        padding: 11px 18px;
+    }
+
+    .trial-banner-wrap {
+        padding: 0 14px 40px;
+    }
+
+    .trial-banner {
+        padding: 32px 18px;
+    }
+
+    .trial-banner h2 {
+        font-size: 1.1rem;
+    }
+
+    .trial-banner p {
+        font-size: 0.85rem;
+    }
+
+    .trial-banner a {
+        font-size: 0.85rem;
+        padding: 11px 22px;
+    }
+
+    .faq-section {
+        padding: 0 14px 48px;
+    }
+}
