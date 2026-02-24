@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Our Team – Global Speak Academy</title>
+  <meta name="description" content="Join the Global Speak Academy team. We're looking for passionate online English teachers and staff who believe in helping students succeed around the world.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+  <style>
+
+    /* ── HERO ── */
+    .careers-hero {
+      padding: 140px 120px 0;
+      background: #fff;
+    }
+
+    .careers-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      align-items: end;
+      border-bottom: 1px solid var(--faq-lines);
+      padding-bottom: 64px;
+    }
+
+    .careers-hero-left .section-tag {
+      margin-bottom: 20px;
+    }
+
+    .careers-hero-left h1 {
+      font-size: var(--text-h1);
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: var(--lh-tight);
+      letter-spacing: -0.5px;
+    }
+
+    .careers-hero-left h1 span {
+      color: var(--dark-gold);
+    }
+
+    .careers-hero-right {
+      padding-left: 64px;
+      border-left: 1px solid var(--faq-lines);
+    }
+
+    .careers-hero-right p {
+      font-size: var(--text-body-large);
+      color: var(--text-light);
+      line-height: var(--lh-body);
+      margin-bottom: 32px;
+    }
+
+    .careers-hero-meta {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .careers-hero-stat strong {
+      display: block;
+      font-size: var(--text-h2);
+      font-weight: 700;
+      color: var(--dark-gold);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .careers-hero-stat span {
+      font-size: var(--text-small);
+      color: var(--text-light);
+    }
+
+    /* ── MAIN CONTENT ── */
+    .careers-main {
+      padding: 0 120px 80px;
+      background: #fff;
+    }
+
+    /* ── POSITIONS BLOCK ── */
+    .careers-block {
+      padding: 72px 0 64px;
+      border-bottom: 1px solid var(--faq-lines);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .careers-block-label {
+      position: sticky;
+      top: 88px;
+    }
+
+    .careers-block-tag {
+      display: inline-block;
+      font-size: var(--text-caption);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--dark-gold);
+      margin-bottom: 12px;
+    }
+
+    .careers-block-title {
+      font-size: var(--text-h2);
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: var(--lh-heading);
+      letter-spacing: -0.3px;
+      margin-bottom: 16px;
+    }
+
+    .careers-block-desc {
+      font-size: var(--text-small);
+      color: var(--text-light);
+      line-height: var(--lh-body);
+    }
+
+    /* Position cards */
+    .careers-positions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .careers-position-card {
+      background: var(--bg-soft);
+      border-radius: 16px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+
+    .careers-position-card:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+
+    .careers-position-info h3 {
+      font-size: var(--text-h3);
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .careers-position-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .careers-position-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #fff;
+      border-radius: 100px;
+      font-size: var(--text-caption);
+      font-weight: 600;
+      color: var(--text-light);
+    }
+
+    .careers-position-card .careers-apply-btn {
+      display: inline-block;
+      padding: 10px 22px;
+      background: var(--dark-gold);
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: var(--text-small);
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: opacity 0.2s;
+    }
+
+    .careers-position-card .careers-apply-btn:hover {
+      opacity: 0.85;
+    }
+
+    /* ── TWO-COL: WHAT WE OFFER + REQUIREMENTS ── */
+    .careers-two-col {
+      padding: 72px 0 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .careers-offer-block {
+      padding-right: 64px;
+      border-right: 1px solid var(--faq-lines);
+    }
+
+    .careers-req-block {
+      padding-left: 64px;
+    }
+
+    .careers-list {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .careers-list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--faq-lines);
+      font-size: var(--text-body);
+      color: var(--text-dark);
+      line-height: var(--lh-body);
+    }
+
+    .careers-list-item:first-child {
+      border-top: 1px solid var(--faq-lines);
+    }
+
+    .careers-list-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23C4AA6C' fill-opacity='.15'/%3E%3Cpath d='M6 10l3 3 5-5' stroke='%23C4AA6C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
+
+    /* ── CTA ── */
+    .careers-cta-wrap {
+      padding: 72px 120px 80px;
+    }
+
+    .careers-cta-box {
+      background: linear-gradient(135deg, #1A1A1A 0%, #2d2a24 100%);
+      border-radius: 20px;
+      padding: 64px 56px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .careers-cta-box h2 {
+      color: #fff;
+      font-size: var(--text-h2);
+      font-weight: 700;
+      line-height: var(--lh-heading);
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+
+    .careers-cta-box p {
+      color: #b0a898;
+      font-size: var(--text-body);
+      line-height: var(--lh-body);
+      max-width: 480px;
+    }
+
+    .careers-cta-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: stretch;
+      flex-shrink: 0;
+    }
+
+    .careers-btn-primary {
+      display: inline-block;
+      padding: 16px 36px;
+      background: var(--dark-gold);
+      color: #fff;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: var(--text-body);
+      text-decoration: none;
+      white-space: nowrap;
+      text-align: center;
+      transition: opacity 0.2s;
+    }
+    .careers-btn-primary:hover { opacity: 0.85; }
+
+    .careers-cta-note {
+      font-size: var(--text-small);
+      color: #7a7060;
+      text-align: center;
+    }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width: 1280px) {
+      .careers-hero { padding: 130px 80px 0; }
+      .careers-main { padding: 0 80px 80px; }
+      .careers-block { grid-template-columns: 220px 1fr; gap: 56px; }
+      .careers-cta-wrap { padding: 72px 80px 80px; }
+    }
+
+    @media (max-width: 1024px) {
+      .careers-hero { padding: 110px 40px 0; }
+      .careers-hero-inner { grid-template-columns: 1fr; gap: 0; }
+      .careers-hero-right { padding-left: 0; border-left: none; border-top: 1px solid var(--faq-lines); padding-top: 40px; margin-top: 40px; }
+      .careers-main { padding: 0 40px 72px; }
+      .careers-block { grid-template-columns: 1fr; gap: 32px; }
+      .careers-block-label { position: static; }
+      .careers-two-col { grid-template-columns: 1fr; }
+      .careers-offer-block { padding-right: 0; border-right: none; border-bottom: 1px solid var(--faq-lines); padding-bottom: 56px; margin-bottom: 56px; }
+      .careers-req-block { padding-left: 0; }
+      .careers-cta-wrap { padding: 56px 40px 64px; }
+      .careers-cta-box { grid-template-columns: 1fr; gap: 32px; padding: 48px 40px; text-align: center; }
+      .careers-cta-box p { max-width: 100%; }
+      .careers-cta-actions { align-items: center; }
+    }
+
+    @media (max-width: 768px) {
+      .careers-hero { padding: 110px 24px 0; }
+      .careers-hero-inner { padding-bottom: 48px; }
+      .careers-main { padding: 0 24px 56px; }
+      .careers-block { padding: 48px 0 48px; }
+      .careers-two-col { padding: 48px 0 0; }
+      .careers-position-card { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .careers-position-card .careers-apply-btn { width: 100%; text-align: center; }
+      .careers-cta-wrap { padding: 48px 24px 56px; }
+      .careers-cta-box { padding: 40px 24px; border-radius: 18px; }
+      .careers-btn-primary { width: 100%; }
+    }
+
+    @media (max-width: 414px) {
+      .careers-hero { padding: 100px 20px 0; }
+      .careers-main { padding: 0 20px 48px; }
+      .careers-cta-wrap { padding: 40px 20px 48px; }
+    }
+
+    @media (max-width: 375px) {
+      .careers-hero { padding: 96px 16px 0; }
+      .careers-main { padding: 0 16px 44px; }
+      .careers-cta-wrap { padding: 36px 16px 44px; }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+    </a>
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="programs.html">Programs <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="programs.html?tab=adult">Adult Lessons</a></li>
+          <li><a href="programs.html?tab=kids">Kids Lessons</a></li>
+          <li><a href="programs.html?tab=group">Group Classes</a></li>
+          <li><a href="programs.html?tab=self">Self Guided Lessons</a></li>
+          <li><a href="programs.html?tab=corporate">Corporate Training</a></li>
+        </ul>
+      </li>
+      <li><a href="subscription-plans.html">Pricing</a></li>
+      <li><a href="trial-lesson.html">$10 Trial</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Testimonials</a></li>
+      <li><a href="english-resources.html">English Resources</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">More <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="join-our-team.html" style="color:var(--dark-gold)">Career at Global Speak Academy</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a class="btn-apply" href="index.html#contact">Apply Now</a>
+    <script>
+      window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 40);
+      });
+    </script>
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mob-header">
+      <a href="index.html"><img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:40px;width:auto;display:block;"></a>
+      <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <a href="index.html" class="mob-link">Home</a>
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Programs <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="programs.html?tab=adult">Adult Lessons</a>
+        <a href="programs.html?tab=kids">Kids Lessons</a>
+        <a href="programs.html?tab=group">Group Classes</a>
+        <a href="programs.html?tab=self">Self Guided Lessons</a>
+        <a href="programs.html?tab=corporate">Corporate Training</a>
+      </div>
+    </div>
+    <a href="subscription-plans.html" class="mob-link">Pricing</a>
+    <a href="trial-lesson.html" class="mob-link">$10 Trial</a>
+    <a href="index.html#about" class="mob-link">About</a>
+    <a href="index.html#testimonials" class="mob-link">Testimonials</a>
+    <a href="english-resources.html" class="mob-link">English Resources</a>
+    <a href="index.html#contact" class="mob-link">Contact</a>
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">More <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="join-our-team.html" style="color:var(--dark-gold)">Career at Global Speak Academy</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <a href="index.html#contact" class="mob-apply">Apply Now</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════
+  HERO
+  ════════════════════════════════ -->
+  <div class="careers-hero">
+    <div class="careers-hero-inner">
+      <div class="careers-hero-left">
+        <span class="section-tag">Careers</span>
+        <h1>Join Our<br><span>Global Team</span></h1>
+      </div>
+      <div class="careers-hero-right">
+        <p>We're expanding and looking for passionate, reliable educators and staff who believe in helping students succeed around the world. 100% remote, fully flexible.</p>
+        <div class="careers-hero-meta">
+          <div class="careers-hero-stat">
+            <strong>100%</strong>
+            <span>remote work</span>
+          </div>
+          <div class="careers-hero-stat">
+            <strong>Flexible</strong>
+            <span>scheduling</span>
+          </div>
+          <div class="careers-hero-stat">
+            <strong>Global</strong>
+            <span>student base</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════
+  MAIN
+  ════════════════════════════════ -->
+  <div class="careers-main">
+
+    <!-- OPEN POSITIONS -->
+    <div class="careers-block">
+      <div class="careers-block-label">
+        <span class="careers-block-tag">Now Hiring</span>
+        <h2 class="careers-block-title">Open Positions</h2>
+        <p class="careers-block-desc">We're growing our team of dedicated educators and specialists. See what's available below.</p>
+      </div>
+      <div class="careers-positions">
+        <div class="careers-position-card">
+          <div class="careers-position-info">
+            <h3>Online English Teacher — Adults</h3>
+            <div class="careers-position-tags">
+              <span class="careers-position-tag">Remote</span>
+              <span class="careers-position-tag">Flexible hours</span>
+              <span class="careers-position-tag">1-on-1 & Group</span>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSddF_aXBYaH1Lhhf2O5PxAw4QC9C2uMWv53GtCoBJKftQeSuQ/viewform?usp=header" target="_blank" class="careers-apply-btn">Apply Now →</a>
+        </div>
+        <div class="careers-position-card">
+          <div class="careers-position-info">
+            <h3>Online English Teacher — Kids</h3>
+            <div class="careers-position-tags">
+              <span class="careers-position-tag">Remote</span>
+              <span class="careers-position-tag">Flexible hours</span>
+              <span class="careers-position-tag">Ages 4–12</span>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSddF_aXBYaH1Lhhf2O5PxAw4QC9C2uMWv53GtCoBJKftQeSuQ/viewform?usp=header" target="_blank" class="careers-apply-btn">Apply Now →</a>
+        </div>
+        <div class="careers-position-card">
+          <div class="careers-position-info">
+            <h3>Quality Assurance Specialist</h3>
+            <div class="careers-position-tags">
+              <span class="careers-position-tag">Remote</span>
+              <span class="careers-position-tag">Part-time</span>
+              <span class="careers-position-tag">Operations</span>
+            </div>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSddF_aXBYaH1Lhhf2O5PxAw4QC9C2uMWv53GtCoBJKftQeSuQ/viewform?usp=header" target="_blank" class="careers-apply-btn">Apply Now →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT WE OFFER + REQUIREMENTS -->
+    <div class="careers-two-col">
+
+      <div class="careers-offer-block">
+        <span class="careers-block-tag">What We Offer</span>
+        <h2 class="careers-block-title">Why Work With Us</h2>
+        <p class="careers-block-desc">We take care of our team so our team can take care of our students.</p>
+        <div class="careers-list">
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Fully remote work — teach from anywhere in the world
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Flexible scheduling that fits your lifestyle
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Professional training and onboarding support
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Real growth opportunities within the academy
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Supportive, collaborative team environment
+          </div>
+        </div>
+      </div>
+
+      <div class="careers-req-block">
+        <span class="careers-block-tag">Requirements</span>
+        <h2 class="careers-block-title">What We're Looking For</h2>
+        <p class="careers-block-desc">For teaching positions, we have a high bar — because our students deserve the best.</p>
+        <div class="careers-list">
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Fluent English speaker (native or near-native)
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            5–6 years of teaching experience (in-person and online)
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            College degree in Education or a related field
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            TEFL certification (or equivalent)
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Reliable internet connection and camera setup
+          </div>
+          <div class="careers-list-item">
+            <span class="careers-list-icon"></span>
+            Professionalism and excellent communication skills
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ═══════════════════════════════
+  CTA
+  ════════════════════════════════ -->
+  <div class="careers-cta-wrap">
+    <div class="careers-cta-box">
+      <div>
+        <h2>Ready to Join the Team?</h2>
+        <p>Submit your resume and application through our form. We review every application personally and will be in touch within a few business days.</p>
+      </div>
+      <div class="careers-cta-actions">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSddF_aXBYaH1Lhhf2O5PxAw4QC9C2uMWv53GtCoBJKftQeSuQ/viewform?usp=header" target="_blank" class="careers-btn-primary">Submit Your Application →</a>
+        <span class="careers-cta-note">We review every application personally</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="./assets/img/logo-gold.png" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+        </a>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="subscription-plans.html">Pricing</a></li>
+        <li><a href="trial-lesson.html">$10 Trial</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="english-resources.html">English Resources</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="LinkedIn"><img src="./assets/img/LinkedIn.svg" alt="LinkedIn" class="social-icon"></a>
+        <a href="#" class="social-btn" title="Instagram"><img src="./assets/img/Instagram.svg" alt="Instagram" class="social-icon"></a>
+        <a href="#" class="social-btn" title="Facebook"><img src="./assets/img/Facebook.svg" alt="Facebook" class="social-icon"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Global Speak Academy &ndash; All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made by <a href="http://yanaharcourt.dev" class="designer-link">Yana Harcourt</a></p>
+    </div>
+  </footer>
+
+
+  <script>
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobClose = document.getElementById('mobClose');
+
+    function openMenu() { burger.classList.add('open'); mobileMenu.classList.add('open'); document.body.classList.add('menu-open'); }
+    function closeMenu() { burger.classList.remove('open'); mobileMenu.classList.remove('open'); document.body.classList.remove('menu-open'); }
+
+    burger.addEventListener('click', () => burger.classList.contains('open') ? closeMenu() : openMenu());
+    mobClose.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    document.querySelectorAll('.mob-dropdown-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.nextElementSibling;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.mob-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.mob-arrow').forEach(a => a.classList.remove('open'));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.querySelector('.mob-arrow').classList.add('open');
+        }
+      });
+    });
+
+    /* Scroll animations */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.04 });
+
+    document.querySelectorAll('.careers-position-card, .careers-list-item').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(12px)';
+      el.style.transition = `opacity 0.28s ease ${i * 0.04}s, transform 0.28s ease ${i * 0.04}s`;
+      io.observe(el);
+    });
+  </script>
+
+</body>
+</html>
