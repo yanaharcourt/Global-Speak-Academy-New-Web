@@ -1,0 +1,804 @@
+/* ══════════════════════════════════════════
+   TRIAL LESSON PAGE — trial-lesson.css
+══════════════════════════════════════════ */
+
+/* ── PAGE HERO ── */
+.trial-page-hero {
+    padding: 140px 120px 80px;
+    background: var(--bg-soft);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.trial-hero-left .section-tag {
+    margin-bottom: 16px;
+}
+
+.trial-hero-left h1 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.trial-hero-left h1 span {
+    color: var(--dark-gold);
+}
+
+.trial-hero-left p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+
+.trial-hero-price {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 32px;
+}
+
+.trial-hero-price .price-big {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--dark-gold);
+    line-height: 1;
+}
+
+.trial-hero-price .price-label {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.trial-hero-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-trial-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--dark-gold);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.97rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.btn-trial-primary:hover {
+    opacity: 0.85;
+}
+
+.btn-trial-outline {
+    display: inline-block;
+    padding: 14px 32px;
+    background: transparent;
+    color: var(--text-dark);
+    border: 1.5px solid var(--btn-outline);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.97rem;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-trial-outline:hover {
+    border-color: var(--dark-gold);
+    color: var(--dark-gold);
+}
+
+.trial-hero-right {
+    position: relative;
+}
+
+.trial-hero-img {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e8dfc8 0%, #c4aa6c 50%, #8b7340 100%);
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trial-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.trial-badge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 22px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trial-badge-icon {
+    width: 44px;
+    height: 44px;
+    background: #FEF9EE;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.trial-badge-text strong {
+    display: block;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.trial-badge-text span {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* ── WHAT YOU GET ── */
+.trial-includes {
+    padding: 100px 120px;
+    background: #fff;
+}
+
+.trial-includes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.trial-include-card {
+    background: var(--bg-soft);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.trial-include-card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+.trial-include-icon {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.trial-include-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.trial-include-card p {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    line-height: 1.55;
+}
+
+/* ── SCHEDULE ── */
+.trial-schedule {
+    padding: 100px 120px;
+    background: var(--bg-soft);
+}
+
+.trial-schedule-wrap {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 0;
+    position: relative;
+}
+
+.schedule-item:not(:last-child) .schedule-body {
+    border-bottom: 1px solid var(--faq-lines);
+}
+
+.schedule-time {
+    padding: 28px 24px 28px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.schedule-time-badge {
+    display: inline-block;
+    background: var(--dark-gold);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.schedule-body {
+    padding: 28px 0 28px 32px;
+    border-left: 2px solid #EEEEEE;
+    position: relative;
+}
+
+.schedule-body::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 36px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--dark-gold);
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px var(--dark-gold);
+}
+
+.schedule-body h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.schedule-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.schedule-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.45;
+}
+
+.schedule-features li::before {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23C4AA6C' fill-opacity='.15'/%3E%3Cpath d='M6 10l3 3 5-5' stroke='%23C4AA6C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+/* ── CTA BOTTOM ── */
+.trial-cta-section {
+    padding: 100px 120px;
+    background: #fff;
+}
+
+.trial-cta-box {
+    background: linear-gradient(135deg, #1A1A1A 0%, #2d2a24 100%);
+    border-radius: 24px;
+    padding: 72px 56px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+    align-items: center;
+}
+
+.trial-cta-box h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.trial-cta-box p {
+    color: #b0a898;
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 520px;
+}
+
+.trial-cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.trial-cta-actions .btn-trial-primary {
+    white-space: nowrap;
+    padding: 16px 36px;
+    font-size: 1rem;
+}
+
+.trial-cta-note {
+    font-size: 0.8rem;
+    color: #7a7060;
+    text-align: center;
+}
+.trial-include-icon img {
+    width: 26px;
+    height: 26px;
+}
+/* ══════════════════════════════════════════
+RESPONSIVE BREAKPOINTS
+══════════════════════════════════════════ */
+
+/* 1920px+ */
+@media (min-width: 1920px) {
+    .trial-page-hero {
+        padding: 160px 160px 100px;
+        gap: 100px;
+    }
+
+    .trial-hero-left h1 {
+        font-size: 3.6rem;
+    }
+
+    .trial-hero-left p {
+        font-size: 1.2rem;
+    }
+
+    .trial-hero-price .price-big {
+        font-size: 4.2rem;
+    }
+
+    .trial-includes {
+        padding: 120px 160px;
+    }
+
+    .trial-includes-grid {
+        gap: 32px;
+        margin-top: 64px;
+    }
+
+    .trial-include-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .trial-include-card p {
+        font-size: 1rem;
+    }
+
+    .trial-schedule {
+        padding: 120px 160px;
+    }
+
+    .schedule-body h3 {
+        font-size: 1.2rem;
+    }
+
+    .schedule-features li {
+        font-size: 1rem;
+    }
+
+    .trial-cta-section {
+        padding: 120px 160px;
+    }
+
+    .trial-cta-box h2 {
+        font-size: 2.4rem;
+    }
+
+    .trial-cta-box p {
+        font-size: 1.1rem;
+    }
+}
+
+/* 1600px–1919px */
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .trial-page-hero {
+        padding: 150px 140px 88px;
+        gap: 88px;
+    }
+
+    .trial-hero-left h1 {
+        font-size: 3.2rem;
+    }
+
+    .trial-hero-left p {
+        font-size: 1.15rem;
+    }
+
+    .trial-hero-price .price-big {
+        font-size: 3.8rem;
+    }
+
+    .trial-includes {
+        padding: 110px 140px;
+    }
+
+    .trial-include-card h3 {
+        font-size: 1.05rem;
+    }
+
+    .trial-include-card p {
+        font-size: 0.95rem;
+    }
+
+    .trial-schedule {
+        padding: 110px 140px;
+    }
+
+    .schedule-body h3 {
+        font-size: 1.1rem;
+    }
+
+    .trial-cta-section {
+        padding: 110px 140px;
+    }
+
+    .trial-cta-box h2 {
+        font-size: 2.1rem;
+    }
+}
+
+/* до 1280px */
+@media (max-width: 1280px) {
+    .trial-page-hero {
+        padding: 130px 80px 72px;
+        gap: 56px;
+    }
+
+    .trial-includes {
+        padding: 80px 80px;
+    }
+
+    .trial-schedule {
+        padding: 80px 80px;
+    }
+
+    .trial-cta-section {
+        padding: 80px 80px;
+    }
+}
+
+/* до 1024px — планшет горизонтальный */
+@media (max-width: 1024px) {
+    .trial-page-hero {
+        padding: 110px 40px 64px;
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .trial-hero-left h1 {
+        font-size: 2.4rem;
+    }
+
+    .trial-hero-left p {
+        max-width: 100%;
+    }
+
+    .trial-hero-right {
+        max-width: 560px;
+    }
+
+    .trial-badge {
+        bottom: -16px;
+        left: -8px;
+    }
+
+    .trial-includes {
+        padding: 72px 40px;
+    }
+
+    .trial-includes-grid {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 36px;
+    }
+
+    .trial-schedule {
+        padding: 72px 40px;
+    }
+
+    .schedule-item {
+        grid-template-columns: 120px 1fr;
+    }
+
+    .trial-cta-section {
+        padding: 72px 40px;
+    }
+
+    .trial-cta-box {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 48px 40px;
+        text-align: center;
+    }
+
+    .trial-cta-box p {
+        max-width: 100%;
+    }
+
+    .trial-cta-actions {
+        align-items: center;
+    }
+}
+
+/* до 768px — планшет вертикальный */
+@media (max-width: 768px) {
+    .trial-page-hero {
+        padding: 110px 24px 56px;
+        gap: 40px;
+    }
+
+    .trial-hero-left h1 {
+        font-size: 2rem;
+    }
+
+    .trial-hero-left p {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
+    .trial-hero-price .price-big {
+        font-size: 3rem;
+    }
+
+    .trial-hero-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-trial-primary,
+    .btn-trial-outline {
+        text-align: center;
+        width: 100%;
+    }
+
+    .trial-badge {
+        bottom: -14px;
+        left: 12px;
+    }
+
+    .trial-includes {
+        padding: 60px 24px;
+    }
+
+    .trial-includes-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .trial-include-card {
+        padding: 22px 20px;
+    }
+
+    .trial-schedule {
+        padding: 60px 24px;
+    }
+
+    .trial-schedule-wrap {
+        margin-top: 32px;
+    }
+
+    .schedule-item {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-time {
+        padding: 24px 0 8px 0;
+    }
+
+    .schedule-body {
+        padding: 0 0 24px 24px;
+        border-left: 2px solid #EEEEEE;
+    }
+
+    .schedule-body::before {
+        top: 6px;
+    }
+
+    .schedule-body h3 {
+        font-size: 1rem;
+    }
+
+    .schedule-features li {
+        font-size: 0.88rem;
+    }
+
+    .trial-cta-section {
+        padding: 60px 24px;
+    }
+
+    .trial-cta-box {
+        padding: 40px 24px;
+        border-radius: 18px;
+    }
+
+    .trial-cta-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .trial-cta-box p {
+        font-size: 0.93rem;
+    }
+
+    .trial-cta-actions .btn-trial-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* до 414px */
+@media (max-width: 414px) {
+    .trial-page-hero {
+        padding: 100px 20px 48px;
+    }
+
+    .trial-hero-left h1 {
+        font-size: 1.75rem;
+    }
+
+    .trial-includes {
+        padding: 48px 20px;
+    }
+
+    .trial-schedule {
+        padding: 48px 20px;
+    }
+
+    .trial-cta-section {
+        padding: 48px 20px;
+    }
+
+    .trial-cta-box h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/* до 375px */
+@media (max-width: 375px) {
+    .trial-page-hero {
+        padding: 96px 16px 44px;
+    }
+
+    .trial-hero-left h1 {
+        font-size: 1.6rem;
+    }
+
+    .trial-hero-left p {
+        font-size: 0.93rem;
+    }
+
+    .trial-hero-price .price-big {
+        font-size: 2.6rem;
+    }
+
+    .trial-includes {
+        padding: 44px 16px;
+    }
+
+    .trial-schedule {
+        padding: 44px 16px;
+    }
+
+    .trial-cta-section {
+        padding: 44px 16px;
+    }
+
+    .trial-cta-box {
+        padding: 32px 18px;
+    }
+
+    .trial-cta-box h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* до 360px */
+@media (max-width: 360px) {
+    .trial-hero-left h1 {
+        font-size: 1.5rem;
+    }
+
+    .schedule-body h3 {
+        font-size: 0.95rem;
+    }
+
+    .schedule-features li {
+        font-size: 0.85rem;
+    }
+
+    .trial-include-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .trial-include-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* до 320px */
+@media (max-width: 320px) {
+    .trial-page-hero {
+        padding: 92px 14px 40px;
+    }
+
+    .trial-hero-left h1 {
+        font-size: 1.35rem;
+    }
+
+    .trial-hero-left p {
+        font-size: 0.88rem;
+    }
+
+    .trial-hero-price .price-big {
+        font-size: 2.4rem;
+    }
+
+    .trial-includes {
+        padding: 40px 14px;
+    }
+
+    .trial-include-card {
+        padding: 18px 14px;
+    }
+
+    .trial-schedule {
+        padding: 40px 14px;
+    }
+
+    .schedule-body h3 {
+        font-size: 0.9rem;
+    }
+
+    .schedule-features li {
+        font-size: 0.82rem;
+    }
+
+    .trial-cta-section {
+        padding: 40px 14px;
+    }
+
+    .trial-cta-box {
+        padding: 28px 14px;
+        border-radius: 14px;
+    }
+
+    .trial-cta-box h2 {
+        font-size: 1.15rem;
+    }
+
+    .trial-cta-box p {
+        font-size: 0.85rem;
+    }
+}

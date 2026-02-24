@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a $10 Trial Lesson – Global Speak Academy</title>
+  <meta name="description"
+    content="Book your $10, 90-minute trial English lesson. We'll evaluate your speaking, grammar, and vocabulary — and build a personalized learning plan just for you.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/trial-lesson.css">
+</head>
+
+<body id="top">
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+    </a>
+
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="#">Programs <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="index.html#programs">Adult Lessons</a></li>
+          <li><a href="index.html#programs">Kids Lessons</a></li>
+          <li><a href="index.html#programs">Group Classes</a></li>
+          <li><a href="index.html#programs">Self Guided Lessons</a></li>
+          <li><a href="index.html#programs">Corporate Training</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Pricing <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="subscription-plans.html">Subscription Plans</a></li>
+        </ul>
+      </li>
+      <li><a href="trial-lesson.html" style="color:var(--dark-gold)">$10 Trial</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Testimonials</a></li>
+      <li><a href="#">English Resources</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">More <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="#">Career at Global Speak Academy</a></li>
+          <li><a href="#">English Resources</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <a class="btn-apply" href="#book-now" style="background:var(--dark-gold);color:#fff;">Book $10 Trial</a>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      });
+    </script>
+
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mob-header">
+      <a href="index.html">
+        <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:40px;width:auto;display:block;">
+      </a>
+      <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+
+    <a href="index.html" class="mob-link">Home</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Programs <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="index.html#programs">Adult Lessons</a>
+        <a href="index.html#programs">Kids Lessons</a>
+        <a href="index.html#programs">Group Classes</a>
+        <a href="index.html#programs">Self Guided Lessons</a>
+        <a href="index.html#programs">Corporate Training</a>
+      </div>
+    </div>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Pricing <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="subscription-plans.html">Subscription Plans</a>
+      </div>
+    </div>
+
+    <a href="trial-lesson.html" class="mob-link" style="color:var(--dark-gold)">$10 Trial</a>
+
+    <a href="index.html#about" class="mob-link">About</a>
+    <a href="index.html#testimonials" class="mob-link">Testimonials</a>
+    <a href="#" class="mob-link">English Resources</a>
+    <a href="index.html#contact" class="mob-link">Contact</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">More <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="#">Career at Global Speak Academy</a>
+        <a href="#">English Resources</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+
+    <a href="#book-now" class="mob-apply">Book $10 Trial</a>
+  </div>
+
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <div class="trial-page-hero">
+
+    <div class="trial-hero-left">
+      <span class="section-tag">Start Your Journey</span>
+      <h1>Your First Step to<br><span>Confident English</span></h1>
+      <p>Join our 90-minute trial lesson for just $10. We'll assess your level, teach a real mini-lesson, and create a
+        personalized plan designed around your goals.</p>
+
+      <div class="trial-hero-price">
+        <span class="price-big">$10</span>
+        <span class="price-label">for a 90-minute lesson</span>
+      </div>
+
+      <div class="trial-hero-btns">
+        <a href="#book-now" class="btn-trial-primary">Book Your Trial Lesson →</a>
+        <a href="subscription-plans.html" class="btn-trial-outline">View All Plans</a>
+      </div>
+    </div>
+
+    <div class="trial-hero-right">
+      <div class="trial-hero-img">
+        <img src="assets/img/trial-hero.png" alt="Trial English Lesson" onerror="this.style.display='none'">
+      </div>
+      <div class="trial-badge">
+        <div class="trial-badge-icon">⭐</div>
+        <div class="trial-badge-text">
+          <strong>Rated 4.9 / 5.0</strong>
+          <span>by our students</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ═══════════ WHAT'S INCLUDED ═══════════ -->
+  <section class="trial-includes">
+    <span class="section-tag">What's Included</span>
+    <h2 class="section-h2">Everything in Your $10 Trial</h2>
+    <p class="section-lead">One lesson that gives you a full picture of your English level and a clear path forward.</p>
+
+    <div class="trial-includes-grid">
+
+      <div class="trial-include-card">
+        <div class="trial-include-icon">
+          <img src="./assets/img/icon-speaking.svg" alt="Speaking Assessment">
+        </div>
+        <h3>Speaking Assessment</h3>
+        <p>We evaluate your fluency, pronunciation, and listening comprehension through natural conversation.</p>
+      </div>
+
+      <div class="trial-include-card">
+        <div class="trial-include-icon">
+          <img src="./assets/img/icon-grammar.svg" alt="Grammar Evaluation">
+        </div>
+        <h3>Grammar Evaluation</h3>
+        <p>We identify common grammar patterns, sentence structure accuracy, and frequent mistakes.</p>
+      </div>
+
+      <div class="trial-include-card">
+        <div class="trial-include-icon">
+          <img src="./assets/img/icon-vocabulary.svg" alt="Vocabulary Check">
+        </div>
+        <h3>Vocabulary Check</h3>
+        <p>We measure your vocabulary range and pinpoint gaps that are holding back your communication.</p>
+      </div>
+
+      <div class="trial-include-card">
+        <div class="trial-include-icon">
+          <img src="./assets/img/icon-lesson.svg" alt="Real Mini-Lesson">
+        </div>
+        <h3>Real Mini-Lesson</h3>
+        <p>You get an actual lesson — live corrections, guided practice, real examples and exercises.</p>
+      </div>
+
+      <div class="trial-include-card">
+        <div class="trial-include-icon">
+          <img src="./assets/img/icon-level.svg" alt="Level Recommendation">
+        </div>
+        <h3>Level Recommendation</h3>
+        <p>We explain your CEFR level (A1–C2), your strengths, and a clear roadmap for improvement.</p>
+      </div>
+
+      <div class="trial-include-card">
+        <div class="trial-include-icon">
+          <img src="./assets/img/icon-plan.svg" alt="Personalized Learning Plan">
+        </div>
+        <h3>Personalized Learning Plan</h3>
+        <p>A custom study plan with recommended class schedule, resources, and course placement.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════ SCHEDULE ═══════════ -->
+  <section class="trial-schedule">
+    <span class="section-tag">Lesson Structure</span>
+    <h2 class="section-h2">A Sample Schedule of the Trial Lesson</h2>
+    <p class="section-lead">Every minute of your 90-minute trial is purposeful and structured.</p>
+
+    <div class="trial-schedule-wrap">
+
+      <div class="schedule-item">
+        <div class="schedule-time">
+          <span class="schedule-time-badge">0 – 10 min</span>
+        </div>
+        <div class="schedule-body">
+          <h3>Welcome & Introductions</h3>
+          <ul class="schedule-features">
+            <li>Getting to know the student</li>
+            <li>Understanding goals, challenges, and learning history</li>
+            <li>Explaining what will happen during the class</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-time">
+          <span class="schedule-time-badge">10 – 30 min</span>
+        </div>
+        <div class="schedule-body">
+          <h3>Speaking Assessment</h3>
+          <ul class="schedule-features">
+            <li>Conversation practice</li>
+            <li>Pronunciation check</li>
+            <li>Fluency measurement</li>
+            <li>Listening comprehension check</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-time">
+          <span class="schedule-time-badge">30 – 45 min</span>
+        </div>
+        <div class="schedule-body">
+          <h3>Grammar & Vocabulary Evaluation</h3>
+          <ul class="schedule-features">
+            <li>Identifying common grammar patterns</li>
+            <li>Checking accuracy and sentence structure</li>
+            <li>Understanding vocabulary range</li>
+            <li>Spotting frequent mistakes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-time">
+          <span class="schedule-time-badge">45 – 70 min</span>
+        </div>
+        <div class="schedule-body">
+          <h3>Sample Mini-Lesson — Real Teaching</h3>
+          <ul class="schedule-features">
+            <li>Live correction</li>
+            <li>Guided practice</li>
+            <li>Real examples and exercises</li>
+            <li>Introduction to your teaching style</li>
+            <li>Personalized feedback while practicing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-time">
+          <span class="schedule-time-badge">70 – 80 min</span>
+        </div>
+        <div class="schedule-body">
+          <h3>Level Recommendation</h3>
+          <ul class="schedule-features">
+            <li>CEFR-level explanation (A1–C2)</li>
+            <li>Strengths + areas for improvement</li>
+            <li>Clear roadmap for progress</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule-item">
+        <div class="schedule-time">
+          <span class="schedule-time-badge">80 – 90 min</span>
+        </div>
+        <div class="schedule-body">
+          <h3>Personalized Learning Plan</h3>
+          <ul class="schedule-features">
+            <li>Customized study plan</li>
+            <li>Recommended class schedule</li>
+            <li>Suggested resources</li>
+            <li>Course placement — Starter, Rising Voice, Fluency Builder, or Global Pro</li>
+            <li>Parent feedback for kids' lessons</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════ CTA / BOOK NOW ═══════════ -->
+  <section class="trial-cta-section" id="book-now">
+    <div class="trial-cta-box">
+      <div>
+        <h2>Ready to Start?</h2>
+        <p>Book your $10, 90-minute trial lesson today. No commitment required — just show up, and we'll take care of
+          the rest.</p>
+      </div>
+      <div class="trial-cta-actions">
+        <a href="mailto:BStephens@globalspeakacademy.org?subject=Book%20%2410%20Trial%20Lesson"
+          class="btn-trial-primary">
+          Book Your $10 Trial Lesson →
+        </a>
+        <span class="trial-cta-note">Reply within 24 hours · No hidden fees</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="./assets/img/logo-gold.png" alt="Global Speak Academy"
+            style="height:56px;width:auto;display:block;">
+        </a>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="subscription-plans.html">Pricing</a></li>
+        <li><a href="trial-lesson.html">$10 Trial</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="LinkedIn">
+          <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <img src="./assets/img/Instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Facebook">
+          <img src="./assets/img/Facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Global Speak Academy &ndash; All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made by <a href="http://yanaharcourt.dev" class="designer-link">Yana Harcourt</a></p>
+    </div>
+  </footer>
+
+
+  <script>
+    /* ── FAQ (используется в main.css стилях) ── */
+    function toggleFaq(btn) {
+      const ans = btn.nextElementSibling;
+      const isOpen = ans.classList.contains('open');
+      document.querySelectorAll('.faq-ans').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-btn').forEach(b => b.classList.remove('open'));
+      if (!isOpen) { ans.classList.add('open'); btn.classList.add('open'); }
+    }
+
+    /* ── MOBILE MENU ── */
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobClose = document.getElementById('mobClose');
+
+    function openMenu() {
+      burger.classList.add('open');
+      mobileMenu.classList.add('open');
+      document.body.classList.add('menu-open');
+    }
+    function closeMenu() {
+      burger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    }
+
+    burger.addEventListener('click', () => burger.classList.contains('open') ? closeMenu() : openMenu());
+    mobClose.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    document.querySelectorAll('.mob-dropdown-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.nextElementSibling;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.mob-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.mob-arrow').forEach(a => a.classList.remove('open'));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.querySelector('.mob-arrow').classList.add('open');
+        }
+      });
+    });
+
+    /* ── SCROLL ANIMATION ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.06 });
+
+    document.querySelectorAll('.trial-include-card, .schedule-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      io.observe(el);
+    });
+  </script>
+
+</body>
+
+</html>
