@@ -1,7 +1,3 @@
-/* ══════════════════════════════════════════
-   TRIAL LESSON PAGE — trial-lesson.css
-══════════════════════════════════════════ */
-
 /* ── PAGE HERO ── */
 .trial-page-hero {
     padding: 140px 120px 80px;
@@ -17,10 +13,10 @@
 }
 
 .trial-hero-left h1 {
-    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-size: var(--text-h1);
+    line-height: var(--lh-tight);
     font-weight: 700;
     color: var(--text-dark);
-    line-height: 1.15;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
 }
@@ -30,7 +26,7 @@
 }
 
 .trial-hero-left p {
-    font-size: 1.1rem;
+    font-size: var(--text-body-large);
     color: var(--text-light);
     line-height: 1.7;
     margin-bottom: 32px;
@@ -45,14 +41,14 @@
 }
 
 .trial-hero-price .price-big {
-    font-size: 3.5rem;
+    font-size: var(--text-h1);
     font-weight: 700;
     color: var(--dark-gold);
     line-height: 1;
 }
 
 .trial-hero-price .price-label {
-    font-size: 1rem;
+    font-size: var(--text-body);
     color: var(--text-light);
 }
 
@@ -69,7 +65,7 @@
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 0.97rem;
+    font-size: var(--text-body);
     text-decoration: none;
     transition: opacity 0.2s ease;
 }
@@ -86,7 +82,7 @@
     border: 1.5px solid var(--btn-outline);
     border-radius: 10px;
     font-weight: 500;
-    font-size: 0.97rem;
+    font-size: var(--text-body);
     text-decoration: none;
     transition: border-color 0.2s ease, color 0.2s ease;
 }
@@ -146,13 +142,13 @@
 
 .trial-badge-text strong {
     display: block;
-    font-size: 0.93rem;
+    font-size: var(--text-body);
     font-weight: 700;
     color: var(--text-dark);
 }
 
 .trial-badge-text span {
-    font-size: 0.8rem;
+    font-size: var(--text-small);
     color: var(--text-light);
 }
 
@@ -195,14 +191,14 @@
 }
 
 .trial-include-card h3 {
-    font-size: 1rem;
+    font-size: var(--text-h3);
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 8px;
 }
 
 .trial-include-card p {
-    font-size: 0.88rem;
+    font-size: var(--text-small);
     color: var(--text-light);
     line-height: 1.55;
 }
@@ -244,7 +240,7 @@
     display: inline-block;
     background: var(--dark-gold);
     color: #fff;
-    font-size: 0.75rem;
+    font-size: var(--text-caption);
     font-weight: 700;
     padding: 4px 10px;
     border-radius: 100px;
@@ -271,7 +267,7 @@
 }
 
 .schedule-body h3 {
-    font-size: 1.05rem;
+    font-size: var(--text-h3);
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 12px;
@@ -288,7 +284,7 @@
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    font-size: 0.9rem;
+    font-size: var(--text-body);
     color: var(--text-light);
     line-height: 1.45;
 }
@@ -321,15 +317,15 @@
 
 .trial-cta-box h2 {
     color: #fff;
-    font-size: 2rem;
+    font-size: var(--text-h2);
+    line-height: var(--lh-heading);
     font-weight: 700;
     margin-bottom: 12px;
-    line-height: 1.2;
 }
 
 .trial-cta-box p {
     color: #b0a898;
-    font-size: 1rem;
+    font-size: var(--text-body);
     line-height: 1.65;
     max-width: 520px;
 }
@@ -345,11 +341,11 @@
 .trial-cta-actions .btn-trial-primary {
     white-space: nowrap;
     padding: 16px 36px;
-    font-size: 1rem;
+    font-size: var(--text-body);
 }
 
 .trial-cta-note {
-    font-size: 0.8rem;
+    font-size: var(--text-small);
     color: #7a7060;
     text-align: center;
 }
@@ -368,18 +364,6 @@ RESPONSIVE BREAKPOINTS
         gap: 100px;
     }
 
-    .trial-hero-left h1 {
-        font-size: 3.6rem;
-    }
-
-    .trial-hero-left p {
-        font-size: 1.2rem;
-    }
-
-    .trial-hero-price .price-big {
-        font-size: 4.2rem;
-    }
-
     .trial-includes {
         padding: 120px 160px;
     }
@@ -389,36 +373,16 @@ RESPONSIVE BREAKPOINTS
         margin-top: 64px;
     }
 
-    .trial-include-card h3 {
-        font-size: 1.15rem;
-    }
-
-    .trial-include-card p {
-        font-size: 1rem;
-    }
-
     .trial-schedule {
         padding: 120px 160px;
-    }
-
-    .schedule-body h3 {
-        font-size: 1.2rem;
-    }
-
-    .schedule-features li {
-        font-size: 1rem;
     }
 
     .trial-cta-section {
         padding: 120px 160px;
     }
 
-    .trial-cta-box h2 {
-        font-size: 2.4rem;
-    }
-
     .trial-cta-box p {
-        font-size: 1.1rem;
+        font-size: var(--text-body-large);
     }
 }
 
@@ -429,44 +393,16 @@ RESPONSIVE BREAKPOINTS
         gap: 88px;
     }
 
-    .trial-hero-left h1 {
-        font-size: 3.2rem;
-    }
-
-    .trial-hero-left p {
-        font-size: 1.15rem;
-    }
-
-    .trial-hero-price .price-big {
-        font-size: 3.8rem;
-    }
-
     .trial-includes {
         padding: 110px 140px;
-    }
-
-    .trial-include-card h3 {
-        font-size: 1.05rem;
-    }
-
-    .trial-include-card p {
-        font-size: 0.95rem;
     }
 
     .trial-schedule {
         padding: 110px 140px;
     }
 
-    .schedule-body h3 {
-        font-size: 1.1rem;
-    }
-
     .trial-cta-section {
         padding: 110px 140px;
-    }
-
-    .trial-cta-box h2 {
-        font-size: 2.1rem;
     }
 }
 
@@ -496,10 +432,6 @@ RESPONSIVE BREAKPOINTS
         padding: 110px 40px 64px;
         grid-template-columns: 1fr;
         gap: 48px;
-    }
-
-    .trial-hero-left h1 {
-        font-size: 2.4rem;
     }
 
     .trial-hero-left p {
@@ -559,17 +491,8 @@ RESPONSIVE BREAKPOINTS
         gap: 40px;
     }
 
-    .trial-hero-left h1 {
-        font-size: 2rem;
-    }
-
     .trial-hero-left p {
-        font-size: 1rem;
         margin-bottom: 24px;
-    }
-
-    .trial-hero-price .price-big {
-        font-size: 3rem;
     }
 
     .trial-hero-btns {
@@ -627,14 +550,6 @@ RESPONSIVE BREAKPOINTS
         top: 6px;
     }
 
-    .schedule-body h3 {
-        font-size: 1rem;
-    }
-
-    .schedule-features li {
-        font-size: 0.88rem;
-    }
-
     .trial-cta-section {
         padding: 60px 24px;
     }
@@ -642,14 +557,6 @@ RESPONSIVE BREAKPOINTS
     .trial-cta-box {
         padding: 40px 24px;
         border-radius: 18px;
-    }
-
-    .trial-cta-box h2 {
-        font-size: 1.5rem;
-    }
-
-    .trial-cta-box p {
-        font-size: 0.93rem;
     }
 
     .trial-cta-actions .btn-trial-primary {
@@ -664,10 +571,6 @@ RESPONSIVE BREAKPOINTS
         padding: 100px 20px 48px;
     }
 
-    .trial-hero-left h1 {
-        font-size: 1.75rem;
-    }
-
     .trial-includes {
         padding: 48px 20px;
     }
@@ -679,28 +582,12 @@ RESPONSIVE BREAKPOINTS
     .trial-cta-section {
         padding: 48px 20px;
     }
-
-    .trial-cta-box h2 {
-        font-size: 1.35rem;
-    }
 }
 
 /* до 375px */
 @media (max-width: 375px) {
     .trial-page-hero {
         padding: 96px 16px 44px;
-    }
-
-    .trial-hero-left h1 {
-        font-size: 1.6rem;
-    }
-
-    .trial-hero-left p {
-        font-size: 0.93rem;
-    }
-
-    .trial-hero-price .price-big {
-        font-size: 2.6rem;
     }
 
     .trial-includes {
@@ -720,30 +607,14 @@ RESPONSIVE BREAKPOINTS
     }
 
     .trial-cta-box h2 {
-        font-size: 1.25rem;
+        font-size: var(--text-h2);
     }
 }
 
 /* до 360px */
 @media (max-width: 360px) {
     .trial-hero-left h1 {
-        font-size: 1.5rem;
-    }
-
-    .schedule-body h3 {
-        font-size: 0.95rem;
-    }
-
-    .schedule-features li {
-        font-size: 0.85rem;
-    }
-
-    .trial-include-card h3 {
-        font-size: 0.95rem;
-    }
-
-    .trial-include-card p {
-        font-size: 0.85rem;
+        font-size: var(--text-h2);
     }
 }
 
@@ -751,18 +622,6 @@ RESPONSIVE BREAKPOINTS
 @media (max-width: 320px) {
     .trial-page-hero {
         padding: 92px 14px 40px;
-    }
-
-    .trial-hero-left h1 {
-        font-size: 1.35rem;
-    }
-
-    .trial-hero-left p {
-        font-size: 0.88rem;
-    }
-
-    .trial-hero-price .price-big {
-        font-size: 2.4rem;
     }
 
     .trial-includes {
@@ -777,14 +636,6 @@ RESPONSIVE BREAKPOINTS
         padding: 40px 14px;
     }
 
-    .schedule-body h3 {
-        font-size: 0.9rem;
-    }
-
-    .schedule-features li {
-        font-size: 0.82rem;
-    }
-
     .trial-cta-section {
         padding: 40px 14px;
     }
@@ -795,10 +646,6 @@ RESPONSIVE BREAKPOINTS
     }
 
     .trial-cta-box h2 {
-        font-size: 1.15rem;
-    }
-
-    .trial-cta-box p {
-        font-size: 0.85rem;
+        font-size: var(--text-h3);
     }
 }

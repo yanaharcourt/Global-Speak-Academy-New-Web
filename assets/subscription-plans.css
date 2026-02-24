@@ -10,15 +10,15 @@
 }
 
 .page-hero h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: var(--text-h1);
     font-weight: 700;
     color: var(--text-dark);
-    line-height: 1.2;
+    line-height: var(--lh-tight);
     margin-bottom: 16px;
 }
 
 .page-hero p {
-    font-size: 1.1rem;
+    font-size: var(--text-body-large);
     color: var(--text-light);
     max-width: 600px;
     margin: 0 auto;
@@ -47,7 +47,7 @@
     background: transparent;
     color: var(--text-light);
     font-family: 'Inter', sans-serif;
-    font-size: 0.88rem;
+    font-size: var(--text-small);
     font-weight: 500;
     cursor: pointer;
     transition: all 0.22s ease;
@@ -77,7 +77,7 @@
 }
 
 .plan-section-title {
-    font-size: 1.55rem;
+    font-size: var(--text-h2);
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 8px;
@@ -86,7 +86,7 @@
 .plan-section-subtitle {
     color: var(--text-light);
     margin-bottom: 40px;
-    font-size: 0.97rem;
+    font-size: var(--text-body);
 }
 
 /* ── CARDS GRID ── */
@@ -143,20 +143,20 @@
 }
 
 .plan-name {
-    font-size: 1.1rem;
+    font-size: var(--text-body-large);
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 4px;
 }
 
 .plan-tagline {
-    font-size: 0.88rem;
+    font-size: var(--text-small);
     color: var(--text-light);
     margin-bottom: 20px;
 }
 
 .plan-price {
-    font-size: 2.2rem;
+    font-size: var(--text-h1);
     font-weight: 700;
     color: var(--text-dark);
     line-height: 1;
@@ -164,7 +164,7 @@
 }
 
 .plan-price span {
-    font-size: 1rem;
+    font-size: var(--text-body);
     font-weight: 400;
     color: var(--text-light);
 }
@@ -187,7 +187,7 @@
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    font-size: 0.9rem;
+    font-size: var(--text-small);
     color: var(--text-light);
     line-height: 1.45;
 }
@@ -208,7 +208,7 @@
     margin-top: 24px;
     padding: 13px 24px;
     border-radius: 10px;
-    font-size: 0.93rem;
+    font-size: var(--text-body);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.22s ease;
@@ -241,7 +241,7 @@
 
 .trial-banner h2 {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: var(--text-h2);
     font-weight: 700;
     margin-bottom: 12px;
 }
@@ -249,7 +249,7 @@
 .trial-banner p {
     color: #b0a898;
     margin-bottom: 28px;
-    font-size: 1rem;
+    font-size: var(--text-body);
 }
 
 .trial-banner a {
@@ -259,7 +259,7 @@
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 0.97rem;
+    font-size: var(--text-body);
     text-decoration: none;
     transition: opacity 0.2s;
 }
@@ -293,12 +293,7 @@
         padding: 160px 120px 100px;
     }
 
-    .page-hero h1 {
-        font-size: 3.6rem;
-    }
-
     .page-hero p {
-        font-size: 1.25rem;
         max-width: 700px;
     }
 
@@ -307,7 +302,6 @@
     }
 
     .tab-btn {
-        font-size: 1rem;
         padding: 12px 26px;
     }
 
@@ -315,36 +309,7 @@
         padding: 72px 160px 100px;
     }
 
-    .plan-section-title {
-        font-size: 1.9rem;
-    }
-
-    .plan-section-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .plan-name {
-        font-size: 1.25rem;
-    }
-
-    .plan-tagline {
-        font-size: 1rem;
-    }
-
-    .plan-price {
-        font-size: 2.8rem;
-    }
-
-    .plan-price span {
-        font-size: 1.1rem;
-    }
-
-    .plan-features li {
-        font-size: 1rem;
-    }
-
     .plan-cta {
-        font-size: 1rem;
         padding: 15px 28px;
     }
 
@@ -356,16 +321,7 @@
         padding: 72px 56px;
     }
 
-    .trial-banner h2 {
-        font-size: 2.2rem;
-    }
-
-    .trial-banner p {
-        font-size: 1.15rem;
-    }
-
     .trial-banner a {
-        font-size: 1.1rem;
         padding: 16px 44px;
     }
 
@@ -380,45 +336,16 @@
         padding: 150px 120px 88px;
     }
 
-    .page-hero h1 {
-        font-size: 3.2rem;
-    }
-
-    .page-hero p {
-        font-size: 1.15rem;
-    }
-
     .tabs-wrap {
         padding: 56px 80px 0;
     }
 
     .tab-btn {
-        font-size: 0.95rem;
         padding: 11px 24px;
     }
 
     .plan-section {
         padding: 64px 140px 88px;
-    }
-
-    .plan-section-title {
-        font-size: 1.75rem;
-    }
-
-    .plan-section-subtitle {
-        font-size: 1.05rem;
-    }
-
-    .plan-name {
-        font-size: 1.15rem;
-    }
-
-    .plan-price {
-        font-size: 2.5rem;
-    }
-
-    .plan-features li {
-        font-size: 0.95rem;
     }
 
     .trial-banner-wrap {
@@ -427,14 +354,6 @@
 
     .trial-banner {
         padding: 64px 48px;
-    }
-
-    .trial-banner h2 {
-        font-size: 2rem;
-    }
-
-    .trial-banner p {
-        font-size: 1.05rem;
     }
 
     .faq-section {
@@ -448,10 +367,6 @@
 @media (max-width: 1280px) {
     .plan-section {
         padding: 56px 80px 80px;
-    }
-
-    .plan-section-title {
-        font-size: 1.4rem;
     }
 
     .trial-banner-wrap {
@@ -469,14 +384,6 @@
         padding: 120px 40px 64px;
     }
 
-    .page-hero h1 {
-        font-size: 2.4rem;
-    }
-
-    .page-hero p {
-        font-size: 1rem;
-    }
-
     .tabs-wrap {
         padding: 40px 40px 0;
         justify-content: flex-start;
@@ -487,10 +394,6 @@
         padding: 48px 40px 64px;
     }
 
-    .plan-section-title {
-        font-size: 1.3rem;
-    }
-
     .plans-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -499,20 +402,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .plan-price {
-        font-size: 2rem;
-    }
-
     .trial-banner-wrap {
         padding: 0 40px 64px;
     }
 
     .trial-banner {
         padding: 48px 36px;
-    }
-
-    .trial-banner h2 {
-        font-size: 1.6rem;
     }
 
     .faq-section {
@@ -526,14 +421,6 @@
         padding: 110px 24px 56px;
     }
 
-    .page-hero h1 {
-        font-size: 2rem;
-    }
-
-    .page-hero p {
-        font-size: 1rem;
-    }
-
     .tabs-wrap {
         padding: 36px 0 0;
         justify-content: flex-start;
@@ -541,7 +428,6 @@
     }
 
     .tab-btn {
-        font-size: 0.82rem;
         padding: 9px 16px;
     }
 
@@ -549,12 +435,7 @@
         padding: 40px 24px 56px;
     }
 
-    .plan-section-title {
-        font-size: 1.2rem;
-    }
-
     .plan-section-subtitle {
-        font-size: 0.92rem;
         margin-bottom: 28px;
     }
 
@@ -568,18 +449,6 @@
         padding: 24px 20px;
     }
 
-    .plan-name {
-        font-size: 1rem;
-    }
-
-    .plan-price {
-        font-size: 1.9rem;
-    }
-
-    .plan-features li {
-        font-size: 0.88rem;
-    }
-
     .trial-banner-wrap {
         padding: 0 24px 56px;
     }
@@ -588,16 +457,7 @@
         padding: 40px 24px;
     }
 
-    .trial-banner h2 {
-        font-size: 1.45rem;
-    }
-
-    .trial-banner p {
-        font-size: 0.93rem;
-    }
-
     .trial-banner a {
-        font-size: 0.9rem;
         padding: 12px 28px;
     }
 
@@ -612,16 +472,11 @@
         padding: 100px 20px 48px;
     }
 
-    .page-hero h1 {
-        font-size: 1.75rem;
-    }
-
     .tabs-wrap {
         padding-left: 20px;
     }
 
     .tab-btn {
-        font-size: 0.8rem;
         padding: 8px 14px;
     }
 
@@ -633,16 +488,8 @@
         padding: 22px 18px;
     }
 
-    .plan-price {
-        font-size: 1.75rem;
-    }
-
     .trial-banner-wrap {
         padding: 0 20px 48px;
-    }
-
-    .trial-banner h2 {
-        font-size: 1.3rem;
     }
 
     .faq-section {
@@ -652,16 +499,11 @@
 
 /* до 375px */
 @media (max-width: 375px) {
-    .page-hero h1 {
-        font-size: 1.6rem;
-    }
-
-    .page-hero p {
-        font-size: 0.93rem;
+    .page-hero {
+        padding: 96px 16px 44px;
     }
 
     .tab-btn {
-        font-size: 0.78rem;
         padding: 8px 13px;
     }
 
@@ -673,16 +515,12 @@
         padding: 20px 16px;
     }
 
-    .plan-price {
-        font-size: 1.6rem;
-    }
-
     .trial-banner-wrap {
         padding: 0 16px 44px;
     }
 
     .trial-banner h2 {
-        font-size: 1.2rem;
+        font-size: var(--text-h2);
     }
 
     .faq-section {
@@ -693,27 +531,19 @@
 /* до 360px */
 @media (max-width: 360px) {
     .page-hero h1 {
-        font-size: 1.5rem;
+        font-size: var(--text-h2);
     }
 
     .plan-section-title {
-        font-size: 1.1rem;
+        font-size: var(--text-h3);
     }
 
     .plan-name {
-        font-size: 0.95rem;
+        font-size: var(--text-body);
     }
 
     .plan-price {
-        font-size: 1.5rem;
-    }
-
-    .plan-features li {
-        font-size: 0.85rem;
-    }
-
-    .plan-cta {
-        font-size: 0.88rem;
+        font-size: var(--text-h2);
     }
 }
 
@@ -723,20 +553,11 @@
         padding: 96px 14px 40px;
     }
 
-    .page-hero h1 {
-        font-size: 1.35rem;
-    }
-
-    .page-hero p {
-        font-size: 0.88rem;
-    }
-
     .tabs-wrap {
         padding-left: 14px;
     }
 
     .tab-btn {
-        font-size: 0.75rem;
         padding: 7px 12px;
     }
 
@@ -748,25 +569,8 @@
         padding: 18px 14px;
     }
 
-    .plan-name {
-        font-size: 0.9rem;
-    }
-
-    .plan-tagline {
-        font-size: 0.8rem;
-    }
-
     .plan-price {
-        font-size: 1.4rem;
-    }
-
-    .plan-features li {
-        font-size: 0.82rem;
-    }
-
-    .plan-cta {
-        font-size: 0.85rem;
-        padding: 11px 18px;
+        font-size: var(--text-h3);
     }
 
     .trial-banner-wrap {
@@ -778,15 +582,10 @@
     }
 
     .trial-banner h2 {
-        font-size: 1.1rem;
-    }
-
-    .trial-banner p {
-        font-size: 0.85rem;
+        font-size: var(--text-h3);
     }
 
     .trial-banner a {
-        font-size: 0.85rem;
         padding: 11px 22px;
     }
 
