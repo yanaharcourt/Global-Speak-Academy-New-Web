@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs – Global Speak Academy</title>
+  <meta name="description"
+    content="Explore all English learning programs at Global Speak Academy — adult private lessons, kids lessons, group classes, self-guided courses, and corporate training.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/programs.css">
+</head>
+
+<body id="top">
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:56px;width:auto;display:block;">
+    </a>
+
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="#" style="color:var(--dark-gold)">Programs <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="programs.html?tab=adult">Adult Lessons</a></li>
+          <li><a href="programs.html?tab=kids">Kids Lessons</a></li>
+          <li><a href="programs.html?tab=group">Group Classes</a></li>
+          <li><a href="programs.html?tab=self">Self-Guided Lessons</a></li>
+          <li><a href="programs.html?tab=corporate">Corporate Training</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Pricing <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="subscription-plans.html">Subscription Plans</a></li>
+        </ul>
+      </li>
+      <li><a href="trial-lesson.html">$10 Trial</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Testimonials</a></li>
+      <li><a href="#">English Resources</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#">More <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
+        <ul class="dropdown">
+          <li><a href="#">Career at Global Speak Academy</a></li>
+          <li><a href="#">English Resources</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <a class="btn-apply" href="index.html#contact">Apply Now</a>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      });
+    </script>
+
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mob-header">
+      <a href="index.html">
+        <img src="./assets/img/Logo.svg" alt="Global Speak Academy" style="height:40px;width:auto;display:block;">
+      </a>
+      <button class="mob-close" id="mobClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+
+    <a href="index.html" class="mob-link">Home</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn" style="color:var(--dark-gold)">Programs <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="programs.html?tab=adult">Adult Lessons</a>
+        <a href="programs.html?tab=kids">Kids Lessons</a>
+        <a href="programs.html?tab=group">Group Classes</a>
+        <a href="programs.html?tab=self">Self-Guided Lessons</a>
+        <a href="programs.html?tab=corporate">Corporate Training</a>
+      </div>
+    </div>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">Pricing <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="subscription-plans.html">Subscription Plans</a>
+      </div>
+    </div>
+
+    <a href="trial-lesson.html" class="mob-link">$10 Trial</a>
+    <a href="index.html#about" class="mob-link">About</a>
+    <a href="index.html#testimonials" class="mob-link">Testimonials</a>
+    <a href="#" class="mob-link">English Resources</a>
+    <a href="index.html#contact" class="mob-link">Contact</a>
+
+    <div class="mob-dropdown-item">
+      <button class="mob-dropdown-btn">More <span class="mob-arrow">&#8250;</span></button>
+      <div class="mob-dropdown">
+        <a href="#">Career at Global Speak Academy</a>
+        <a href="#">English Resources</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+
+    <a href="index.html#contact" class="mob-apply">Apply Now</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+  PAGE HERO
+  ════════════════════════════════════════════ -->
+  <div class="prog-page-hero">
+    <div class="prog-hero-inner">
+      <span class="section-tag">Our Programs</span>
+      <h1>Find the Perfect Program<br><span>for Your Goals</span></h1>
+      <p>Whether you're an adult learner, a parent looking for kids' lessons, a professional, or a company — we have a program built for you.</p>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB NAVIGATION
+  ════════════════════════════════════════════ -->
+  <div class="prog-tabs-wrap" id="progTabsWrap">
+    <button class="prog-tab-btn active" data-tab="adult">
+      <span class="prog-tab-label">Adult Lessons</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="kids">
+      <span class="prog-tab-label">Kids Lessons</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="group">
+      <span class="prog-tab-label">Group Classes</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="self">
+      <span class="prog-tab-label">Self-Guided</span>
+    </button>
+    <button class="prog-tab-btn" data-tab="corporate">
+      <span class="prog-tab-label">Corporate</span>
+    </button>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 1 — ADULT LESSONS
+  ════════════════════════════════════════════ -->
+  <section class="prog-section visible" id="tab-adult">
+
+    <!-- Program overview banner -->
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Adult Private Lessons</h2>
+        <p>One-on-one lessons designed for adult learners who want real progress, real fast. Each session is fully personalized — built around your level, your goals, and your schedule. Whether you're a complete beginner or refining advanced skills, your teacher adapts every lesson just for you.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">Flexible scheduling</span>
+          <span class="prog-pill">1-on-1 private</span>
+          <span class="prog-pill">60 min sessions</span>
+          <span class="prog-pill">All levels</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="trial-lesson.html" class="prog-btn-primary">Book $10 Trial →</a>
+          <a href="subscription-plans.html" class="prog-btn-outline">View Pricing</a>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/02.png" alt="Adult English Lessons"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph" style="display:none;background:linear-gradient(135deg,#f0e6c8,#d4b87a)">📚</div>
+      </div>
+    </div>
+
+    <!-- What you'll learn -->
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">What You'll Learn</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-speaking.svg" alt=""></div>
+          <h4>Speaking & Fluency</h4>
+          <p>Develop natural conversation skills, reduce hesitation, and speak with confidence in any situation.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-grammar.svg" alt=""></div>
+          <h4>Grammar & Structure</h4>
+          <p>Master English grammar rules through real examples and immediate feedback, not rote memorization.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-vocabulary.svg" alt=""></div>
+          <h4>Vocabulary Building</h4>
+          <p>Expand your word bank with targeted vocabulary relevant to your life, work, and interests.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-listening.svg" alt=""></div>
+          <h4>Listening & Comprehension</h4>
+          <p>Train your ear to understand native speakers, accents, and natural speech at full speed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Who it's for -->
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Who It's For</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Adults at any level — A1 beginner to C2 advanced</div>
+        <div class="prog-for-item">✓ Professionals who need English for work</div>
+        <div class="prog-for-item">✓ Immigrants building everyday communication skills</div>
+        <div class="prog-for-item">✓ Anyone preparing for IELTS, TOEFL, or job interviews</div>
+        <div class="prog-for-item">✓ People who've tried apps and want real human teaching</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 2 — KIDS LESSONS
+  ════════════════════════════════════════════ -->
+  <section class="prog-section" id="tab-kids">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Kids English — Ages 4–12</h2>
+        <p>Engaging, age-appropriate private lessons that build a strong English foundation for young learners. Our teachers use games, stories, and interactive activities to make learning fun and effective — while tracking real progress every step of the way.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">Ages 4–12</span>
+          <span class="prog-pill">1-on-1 private</span>
+          <span class="prog-pill">45–60 min</span>
+          <span class="prog-pill">Play-based learning</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="trial-lesson.html" class="prog-btn-primary">Book $10 Trial →</a>
+          <a href="subscription-plans.html" class="prog-btn-outline">View Pricing</a>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/03.png" alt="Kids English Lessons"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph" style="display:none;background:linear-gradient(135deg,#c8e6d4,#5a9b75)">🧒</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">What Kids Will Learn</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-phonics.svg" alt=""></div>
+          <h4>Phonics & Reading</h4>
+          <p>Build strong reading foundations through phonics-based methods that make decoding words natural and fun.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-speaking.svg" alt=""></div>
+          <h4>Speaking & Confidence</h4>
+          <p>Children practice speaking in a safe, encouraging environment that builds confidence from the very first lesson.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-grammar.svg" alt=""></div>
+          <h4>Grammar Through Play</h4>
+          <p>Grammar is taught through games and stories — not textbooks — so children absorb structure naturally.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-storytelling.svg" alt=""></div>
+          <h4>Vocabulary & Storytelling</h4>
+          <p>Age-appropriate vocabulary is built through themes, stories, and images that connect to a child's world.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Who It's For</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Children ages 4–12 at any English level</div>
+        <div class="prog-for-item">✓ Kids who are complete beginners in English</div>
+        <div class="prog-for-item">✓ Young learners preparing for international school entry</div>
+        <div class="prog-for-item">✓ Bilingual families wanting to strengthen English alongside another language</div>
+        <div class="prog-for-item">✓ Kids who find traditional lessons boring and need a fresh approach</div>
+      </div>
+    </div>
+
+    <div class="prog-parent-note">
+    
+      <div>
+        <strong>A note for parents</strong>
+        <p>After every trial lesson, we provide detailed parent feedback on your child's current level, strengths, areas to improve, and a personalized learning plan going forward.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 3 — GROUP CLASSES
+  ════════════════════════════════════════════ -->
+  <section class="prog-section" id="tab-group">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Group Classes (Adults)</h2>
+        <p>Small-group English classes where adults learn together in an interactive, social setting. Group classes are perfect for building conversational confidence, practicing with peers, and making real progress at an affordable price point.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">Small groups</span>
+          <span class="prog-pill">Conversation-focused</span>
+          <span class="prog-pill">60 min sessions</span>
+          <span class="prog-pill">More affordable</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="trial-lesson.html" class="prog-btn-primary">Book $10 Trial →</a>
+          <a href="subscription-plans.html" class="prog-btn-outline">View Pricing</a>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/04.png" alt="Group English Classes"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph" style="display:none;background:linear-gradient(135deg,#c8d4e6,#5a75a0)">👥</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">What You'll Learn</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-conversation.svg" alt=""></div>
+          <h4>Conversation Practice</h4>
+          <p>Regular speaking practice with other learners builds fluency and reduces the fear of speaking English.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-grammar.svg" alt=""></div>
+          <h4>Grammar in Context</h4>
+          <p>Grammar rules are taught through real conversations and group discussions — not isolated drills.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-vocabulary.svg" alt=""></div>
+          <h4>Vocabulary Expansion</h4>
+          <p>Learn vocabulary in thematic units so words stick — covering everyday life, work, travel, and more.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-culture.svg" alt=""></div>
+          <h4>Cultural & Social English</h4>
+          <p>Learn how native speakers really talk — idioms, expressions, and cultural context that apps don't teach.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Who It's For</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Adults who want more practice at a lower cost</div>
+        <div class="prog-for-item">✓ Learners who thrive in social, collaborative environments</div>
+        <div class="prog-for-item">✓ Students who want to supplement their private lessons</div>
+        <div class="prog-for-item">✓ People who want to practice with peers of a similar level</div>
+        <div class="prog-for-item">✓ Anyone who wants structured classes without the 1-on-1 price</div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 4 — SELF-GUIDED LESSONS
+  ════════════════════════════════════════════ -->
+  <section class="prog-section" id="tab-self">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Self-Guided Lessons</h2>
+        <p>Study at your own pace, on your own schedule. Our self-guided program gives you access to professionally designed lesson modules, exercises, and resources that you can work through independently — with the option to add live teacher check-ins whenever you want.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">Learn anytime</span>
+          <span class="prog-pill">Mobile-friendly</span>
+          <span class="prog-pill">Lifetime access</span>
+          <span class="prog-pill">Self-paced</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Get Access →</a>
+          <a href="subscription-plans.html" class="prog-btn-outline">View Pricing</a>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/05.png" alt="Self-Guided English Learning"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph" style="display:none;background:linear-gradient(135deg,#e6d4c8,#a07050)">💻</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">What's Included</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-lesson.svg" alt=""></div>
+          <h4>Video Lessons</h4>
+          <p>Pre-recorded lessons taught by our expert teachers covering grammar, vocabulary, pronunciation, and more.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-exercises.svg" alt=""></div>
+          <h4>Practice Exercises</h4>
+          <p>Written exercises, quizzes, and listening activities that reinforce every lesson and track your progress.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-library.svg" alt=""></div>
+          <h4>Virtual Library Access</h4>
+          <p>Full access to our growing library of resources — reading materials, grammar guides, and vocabulary sets.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-certificate.svg" alt=""></div>
+          <h4>Monthly Certificates</h4>
+          <p>Complete modules and receive certificates that track your progress and validate your achievements.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Who It's For</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Busy professionals who can't commit to a fixed class schedule</div>
+        <div class="prog-for-item">✓ Independent learners who prefer to study alone</div>
+        <div class="prog-for-item">✓ Students who want to supplement their live lessons with extra practice</div>
+        <div class="prog-for-item">✓ Anyone looking for an affordable way to start learning</div>
+        <div class="prog-for-item">✓ People in different time zones who need maximum flexibility</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TAB 5 — CORPORATE TRAINING
+  ════════════════════════════════════════════ -->
+  <section class="prog-section" id="tab-corporate">
+
+    <div class="prog-overview">
+      <div class="prog-overview-text">
+        <h2>Corporate English Training</h2>
+        <p>Professional English training for teams and companies. We design custom programs for businesses that need their employees to communicate effectively in English — from presentations and meetings to emails and client calls. Flexible delivery: online, on-site, or hybrid.</p>
+        <div class="prog-overview-pills">
+          <span class="prog-pill">For teams & companies</span>
+          <span class="prog-pill">Custom curriculum</span>
+          <span class="prog-pill">Online or on-site</span>
+          <span class="prog-pill">Progress reports</span>
+        </div>
+        <div class="prog-overview-actions">
+          <a href="index.html#contact" class="prog-btn-primary">Request a Quote →</a>
+          <a href="index.html#contact" class="prog-btn-outline">Learn More</a>
+        </div>
+      </div>
+      <div class="prog-overview-img">
+        <img src="assets/img/06.png" alt="Corporate English Training"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="prog-img-ph" style="display:none;background:linear-gradient(135deg,#1a1a1a,#4a4030)">🏢</div>
+      </div>
+    </div>
+
+    <div class="prog-skills-section">
+      <h3 class="prog-section-label">Training Focus Areas</h3>
+      <div class="prog-skills-grid">
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-business-comm.svg" alt=""></div>
+          <h4>Business Communication</h4>
+          <p>Presentations, meetings, negotiations — we train employees to communicate clearly and professionally in English.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-exercises.svg" alt=""></div>
+          <h4>Professional Writing</h4>
+          <p>Emails, reports, and proposals. Employees learn to write with clarity, appropriate tone, and correct grammar.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-client-english.svg" alt=""></div>
+          <h4>Client-Facing English</h4>
+          <p>Handling international clients, sales calls, and customer service with confidence and professionalism.</p>
+        </div>
+        <div class="prog-skill-card">
+          <div class="prog-skill-icon"><img src="assets/img/icon-industry-vocab.svg" alt=""></div>
+          <h4>Industry-Specific Vocabulary</h4>
+          <p>We tailor vocabulary and scenarios to your industry — tech, finance, healthcare, hospitality, and more.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prog-for-section">
+      <h3 class="prog-section-label">Who It's For</h3>
+      <div class="prog-for-list">
+        <div class="prog-for-item">✓ Companies with international teams or clients</div>
+        <div class="prog-for-item">✓ HR departments looking for structured employee upskilling</div>
+        <div class="prog-for-item">✓ Teams preparing for international expansion</div>
+        <div class="prog-for-item">✓ Organizations where English is a working language</div>
+        <div class="prog-for-item">✓ Individual professionals seeking executive English coaching</div>
+      </div>
+    </div>
+
+    <!-- Corporate process steps -->
+    <div class="prog-process-section">
+      <h3 class="prog-section-label">How It Works</h3>
+      <div class="prog-process-grid">
+        <div class="prog-process-step">
+          <div class="prog-process-num">01</div>
+          <h4>Needs Assessment</h4>
+          <p>We meet with your team to understand your goals, current English levels, and industry context.</p>
+        </div>
+        <div class="prog-process-step">
+          <div class="prog-process-num">02</div>
+          <h4>Custom Curriculum</h4>
+          <p>We design a training program specifically for your employees — not a generic off-the-shelf course.</p>
+        </div>
+        <div class="prog-process-step">
+          <div class="prog-process-num">03</div>
+          <h4>Training Delivery</h4>
+          <p>Live sessions delivered online or on-site, on a schedule that works for your team.</p>
+        </div>
+        <div class="prog-process-step">
+          <div class="prog-process-num">04</div>
+          <h4>Progress Reporting</h4>
+          <p>Regular reports track individual and team progress — so you can see the ROI of your investment.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+  TRIAL BANNER
+  ════════════════════════════════════════════ -->
+  <div class="prog-trial-banner-wrap">
+    <div class="prog-trial-banner">
+      <h2>Not sure which program is right for you?</h2>
+      <p>Book a $10 trial lesson. We'll assess your level and recommend the perfect program for your goals — no commitment required.</p>
+      <a href="trial-lesson.html">Book Your $10 Trial Lesson →</a>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="./assets/img/logo-gold.png" alt="Global Speak Academy"
+            style="height:56px;width:auto;display:block;">
+        </a>
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="programs.html" style="color:var(--dark-gold)">Programs</a></li>
+        <li><a href="subscription-plans.html">Pricing</a></li>
+        <li><a href="trial-lesson.html">$10 Trial</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="LinkedIn">
+          <img src="./assets/img/LinkedIn.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <img src="./assets/img/Instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="#" class="social-btn" title="Facebook">
+          <img src="./assets/img/Facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Global Speak Academy &ndash; All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made by <a href="http://yanaharcourt.dev" class="designer-link">Yana Harcourt</a></p>
+    </div>
+  </footer>
+
+
+  <script>
+    /* ══════════════════════════════════════════
+    TAB SWITCHING
+    ══════════════════════════════════════════ */
+    const progTabBtns = document.querySelectorAll('.prog-tab-btn');
+    const progSections = document.querySelectorAll('.prog-section');
+
+    function switchTab(tabId) {
+      progTabBtns.forEach(b => b.classList.remove('active'));
+      progSections.forEach(s => s.classList.remove('visible'));
+      const btn = document.querySelector(`.prog-tab-btn[data-tab="${tabId}"]`);
+      const section = document.getElementById('tab-' + tabId);
+      if (btn) btn.classList.add('active');
+      if (section) section.classList.add('visible');
+    }
+
+    progTabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        switchTab(btn.dataset.tab);
+        document.getElementById('progTabsWrap').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // Update URL without reloading
+        history.replaceState(null, '', '?tab=' + btn.dataset.tab);
+        // Re-observe new cards
+        observeCards();
+      });
+    });
+
+    // Read tab from URL on load
+    const urlTab = new URLSearchParams(window.location.search).get('tab');
+    if (urlTab) switchTab(urlTab);
+
+    /* ══════════════════════════════════════════
+    SCROLL ANIMATIONS
+    ══════════════════════════════════════════ */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.04 });
+
+    function observeCards() {
+      document.querySelectorAll('.prog-skill-card, .prog-process-step, .prog-for-item').forEach((el, i) => {
+        if (el.style.opacity !== '1') {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(12px)';
+          el.style.transition = `opacity 0.28s ease ${i * 0.04}s, transform 0.28s ease ${i * 0.04}s`;
+          io.observe(el);
+        }
+      });
+    }
+    observeCards();
+
+    /* ══════════════════════════════════════════
+    MOBILE MENU
+    ══════════════════════════════════════════ */
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobClose = document.getElementById('mobClose');
+
+    function openMenu() { burger.classList.add('open'); mobileMenu.classList.add('open'); document.body.classList.add('menu-open'); }
+    function closeMenu() { burger.classList.remove('open'); mobileMenu.classList.remove('open'); document.body.classList.remove('menu-open'); }
+
+    burger.addEventListener('click', () => burger.classList.contains('open') ? closeMenu() : openMenu());
+    mobClose.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    document.querySelectorAll('.mob-dropdown-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = btn.nextElementSibling;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.mob-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.mob-arrow').forEach(a => a.classList.remove('open'));
+        if (!isOpen) {
+          dropdown.classList.add('open');
+          btn.querySelector('.mob-arrow').classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
