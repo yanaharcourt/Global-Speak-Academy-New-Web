@@ -583,53 +583,65 @@
 
 
   <!-- Blog -->
+  <!-- Blog -->
   <section class="blog" id="blog">
     <span class="section-tag">Blog</span>
     <h2 class="section-h2">Programs Designed for Your Goals</h2>
     <p class="section-lead">From beginner to advanced, find the perfect path for your language journey.</p>
-    <div class="blog-grid">
+    <div class="blog-slider-wrap">
+      <button class="blog-nav-btn" id="blogPrev" aria-label="Previous">&#8592;</button>
+      <div class="blog-track-wrap" id="blogTrack">
+        <div class="blog-grid" id="blogGrid">
 
-      <div class="blog-card">
-        <img src="assets/img/013.png" alt="Blog 1"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="blog-card-ph" style="background:linear-gradient(135deg,#1a3a5c,#2c5f8a);display:none">📰</div>
-        <div class="blog-card-body">
-          <span class="blog-date">February 17, 2026</span>
-          <h4>Discover the World of Mastering English with Global Speak Academy</h4>
-          <p>Step into a new era of English learning that places practical communication and cultural immersion at its
-            heart. This guide unveils a forward-thinking approach to mastering English...</p>
-          <a href="#" class="read-art">Read Article</a>
+          <div class="blog-card">
+            <img src="assets/img/013.png" alt="Blog 1"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="blog-card-ph" style="background:linear-gradient(135deg,#1a3a5c,#2c5f8a);display:none">📰</div>
+            <div class="blog-card-body">
+              <span class="blog-date">February 17, 2026</span>
+              <h4>Discover the World of Mastering English with Global Speak Academy</h4>
+              <p>Step into a new era of English learning that places practical communication and cultural immersion at
+                its heart. This guide unveils a forward-thinking approach to mastering English...</p>
+              <a href="#" class="read-art">Read Article</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="assets/img/014.png" alt="Blog 2"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="blog-card-ph" style="background:linear-gradient(135deg,#c9a227,#8b6914);display:none">✏️</div>
+            <div class="blog-card-body">
+              <span class="blog-date">February 3, 2026</span>
+              <h4>Benefits of Personalized English Lessons</h4>
+              <p>Personalized English lessons transform the learning journey by focusing on your unique strengths and
+                challenges. Instead of following a one-size-fits-all curriculum, customized classes...</p>
+              <a href="#" class="read-art">Read Article</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="assets/img/015.png" alt="Blog 3"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="blog-card-ph"
+              style="background:#f0ebe0;display:none;flex-direction:column;font-family:serif;font-size:26px;font-weight:700;color:#1a1a1a;text-align:center;letter-spacing:2px">
+              LEARN<br>ENGLISH</div>
+            <div class="blog-card-body">
+              <span class="blog-date">February 2, 2026</span>
+              <h4>Confident English Speaking with Global Speak Academy</h4>
+              <p>Unlock a new level of communication as you explore ways to confidently express yourself in English.
+                This guide provides practical insights and actionable tips essential for anyone...</p>
+              <a href="#" class="read-art">Read Article</a>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <div class="blog-card">
-        <img src="assets/img/014.png" alt="Blog 2"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="blog-card-ph" style="background:linear-gradient(135deg,#c9a227,#8b6914);display:none">✏️</div>
-        <div class="blog-card-body">
-          <span class="blog-date">February 3, 2026</span>
-          <h4>Benefits of Personalized English Lessons</h4>
-          <p>Personalized English lessons transform the learning journey by focusing on your unique strengths and
-            challenges. Instead of following a one-size-fits-all curriculum, customized classes...</p>
-          <a href="#" class="read-art">Read Article</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="assets/img/015.png" alt="Blog 3"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="blog-card-ph"
-          style="background:#f0ebe0;display:none;flex-direction:column;font-family:serif;font-size:26px;font-weight:700;color:#1a1a1a;text-align:center;letter-spacing:2px">
-          LEARN<br>ENGLISH</div>
-        <div class="blog-card-body">
-          <span class="blog-date">February 2, 2026</span>
-          <h4>Confident English Speaking with Global Speak Academy</h4>
-          <p>Unlock a new level of communication as you explore ways to confidently express yourself in English. This
-            guide provides practical insights and actionable tips essential for anyone...</p>
-          <a href="#" class="read-art">Read Article</a>
-        </div>
-      </div>
-
+      <button class="blog-nav-btn" id="blogNext" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="blog-dots">
+      <span class="blog-dot active"></span>
+      <span class="blog-dot"></span>
+      <span class="blog-dot"></span>
     </div>
   </section>
 
@@ -849,6 +861,43 @@
         }
       });
     });
+  </script>
+
+  <script>
+    const blogTrack = document.getElementById('blogTrack');
+    const blogGrid = document.getElementById('blogGrid');
+    const blogPrev = document.getElementById('blogPrev');
+    const blogNext = document.getElementById('blogNext');
+    const blogDots = document.querySelectorAll('.blog-dot');
+    let blogIndex = 0;
+    const blogTotal = blogGrid ? blogGrid.children.length : 0;
+
+    function updateBlogDots() {
+      blogDots.forEach((d, i) => d.classList.toggle('active', i === blogIndex));
+    }
+
+    function scrollBlog(dir) {
+      blogIndex = Math.max(0, Math.min(blogTotal - 1, blogIndex + dir));
+      const card = blogGrid.children[blogIndex];
+      blogTrack.scrollTo({ left: card.offsetLeft, behavior: 'smooth' });
+      if (blogPrev) blogPrev.disabled = blogIndex === 0;
+      if (blogNext) blogNext.disabled = blogIndex >= blogTotal - 1;
+      updateBlogDots();
+    }
+
+    if (blogPrev) { blogPrev.addEventListener('click', () => scrollBlog(-1)); blogPrev.disabled = true; }
+    if (blogNext) blogNext.addEventListener('click', () => scrollBlog(1));
+
+    if (blogTrack) {
+      blogTrack.addEventListener('scroll', () => {
+        const cardWidth = blogGrid.children[0].offsetWidth;
+        const newIndex = Math.round(blogTrack.scrollLeft / cardWidth);
+        if (newIndex !== blogIndex) {
+          blogIndex = newIndex;
+          updateBlogDots();
+        }
+      });
+    }
   </script>
 
 </body>
