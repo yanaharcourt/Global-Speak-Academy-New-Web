@@ -38,7 +38,7 @@
       <li class="has-dropdown">
         <a href="#">More <img src="./assets/img/arrow.svg" alt="" class="nav-arrow"></a>
         <ul class="dropdown">
-          <li><a href="#">Career at Global Speak Academy</a></li>
+          <li><a href="join-our-team.html">Career at Global Speak Academy</a></li>
           <li><a href="english-resources.html">English Resources</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
@@ -81,7 +81,7 @@
     <div class="mob-dropdown-item">
       <button class="mob-dropdown-btn">More <span class="mob-arrow">&#8250;</span></button>
       <div class="mob-dropdown">
-        <a href="#">Career at Global Speak Academy</a>
+        <a href="join-our-team.html">Career at Global Speak Academy</a>
         <a href="english-resources.html">English Resources</a>
         <a href="index.html#contact">Contact</a>
       </div>
@@ -291,12 +291,12 @@
           io.unobserve(e.target);
         }
       });
-    }, { threshold: 0.04 });
+    }, { threshold: 0, rootMargin: '0px 0px 60px 0px' });
 
     document.querySelectorAll('.res-vocab-item, .res-idiom-block, .res-phrasal-block').forEach((el, i) => {
       el.style.opacity = '0';
-      el.style.transform = 'translateY(12px)';
-      el.style.transition = `opacity 0.28s ease ${i * 0.05}s, transform 0.28s ease ${i * 0.05}s`;
+      el.style.transform = 'translateY(6px)';
+      el.style.transition = `opacity 0.12s ease, transform 0.12s ease`;
       io.observe(el);
     });
   </script>

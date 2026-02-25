@@ -130,6 +130,7 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .prog-btn-primary {
@@ -538,15 +539,11 @@
     .prog-tabs-wrap {
         padding: 0 40px;
         top: 64px;
-        gap: 0;
         justify-content: flex-start;
         overflow-x: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
-    }
-
-    .prog-tabs-wrap::-webkit-scrollbar {
-        display: none;
+        gap: 0;
     }
 
     .prog-tab-btn {
@@ -593,28 +590,39 @@
     }
 
     .prog-tabs-wrap {
-        padding: 0 0 0 24px;
+        padding: 12px 24px;
         top: 64px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 8px;
+        flex-wrap: nowrap;
+        border-bottom: none;
     }
 
     .prog-tab-label {
-        display: none;
+        display: inline;
     }
 
     .prog-tab-btn {
-        padding: 12px 16px;
-        gap: 0;
-        font-size: var(--text-caption);
+        padding: 9px 16px;
+        font-size: var(--text-small);
+        border-radius: 100px;
+        border: 1.5px solid var(--btn-outline);
+        border-bottom: 1.5px solid var(--btn-outline);
+        margin-bottom: 0;
+        color: var(--text-light);
+        transition: all 0.22s ease;
     }
 
-    /* Show full label on active tab only */
-    .prog-tab-btn.active .prog-tab-label {
-        display: inline;
-        margin-left: 6px;
+    .prog-tab-btn:hover {
+        border-color: var(--dark-gold);
+        color: var(--dark-gold);
     }
 
-    .prog-tab-icon {
-        font-size: 18px;
+    .prog-tab-btn.active {
+        background: var(--dark-gold);
+        border-color: var(--dark-gold);
+        color: #fff;
     }
 
     .prog-section {
@@ -628,6 +636,18 @@
 
     .prog-overview-text > p {
         font-size: var(--text-body);
+    }
+
+    .prog-overview-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .prog-btn-primary,
+    .prog-btn-outline {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .prog-skills-grid,
